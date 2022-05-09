@@ -6,10 +6,12 @@
 
 Branches in this project should conform to the following guild lines:
 ```
-<developer name>/<discription of issue>
-git checkout -b tony/bring-cape-town-2-jhb
+<issue number>-<discription of issue>
+git checkout -b 32-tony-bring-cape-town-2-jhb
 ```
 Keep all text in lower case and seprate words using `-`
+
+This is the default branch name when creating a branch for an issue.
 
 ### Commit
 
