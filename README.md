@@ -18,7 +18,7 @@
   <p align="center">
     Interactive 3x3 Rubiks Cube solver app
     <br />
-    <a href="https://ChadleyM/RubixCube/wiki"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ChadleyM/RubixCube/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/ChadleyM/RubixCube/issues/new">Report Bug</a>
