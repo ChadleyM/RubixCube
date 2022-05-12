@@ -1,0 +1,20 @@
+#previousBtn {
+    float: left;
+    background-color: grey;
+}
+
+#nextBtn {
+    float: right;
+}
+
+.tutorial-step {
+    display: none;
+}
+
+#step1 {
+    display: block;
+}
+
+button {
+    background-color: orange;
+}

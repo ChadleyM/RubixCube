@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/howto.css" />
+    <style lang="en" type="text/css" id="dark-mode-custom-style"></style>
+    <style lang="en" type="text/css" id="dark-mode-native-style"></style>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <head>
+        <link rel="stylesheet" href="/styles/styles.css">
+        <title>Solving a Rubik's Cube</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <a href="/index.html">
+                <img class="logo" src="/Rubik's Cube.png" alt="Rubiks Cube logo">          
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/leaderboard/leaderboard.html">Leaderboard</a></li>
+                    <li><a href="/how-to/how-to-solve.html">How to solve a Rubik's Cube</a></li>
+                    <li><a href="/about/about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="center" onload="foo()">
+            <article id="step1" class="tutorial-step">
+                <h2>1. White Cross</h2>
+                <h3>Sub heading</h3>
+                <p>Just a tutorial on how rubiks cubes should be solved <br>
+                    Maybe just link to a video on how its done. Or go step by step as we know it or the details on specific algorithms 
+                </p>
+                <p>If you would like see how to solve a rubiks cube. This <a href="https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/" target="_blank">website</a> provides a nice approach to solving a Rubik's cube!</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxWOt7cJgn1wnFDxzMlOk4NeIVobNRjLRb&amp;clipt=EIjFDRi4sg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <article id="step2" class="tutorial-step">
+                <h2>2. White Corners</h2>
+                <h3>Step right up</h3>
+                <p>Just a tutorial on how rubiks cubes should be solved <br>
+                    Maybe just link to a video on how its done. Or go step by step as we know it or the details on specific algorithms 
+                </p>
+                <p>If you would like see how to solve a rubiks cube. This <a href="https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/" target="_blank">website</a> provides a nice approach to solving a Rubik's cube!</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxWOt7cJgn1wnFDxzMlOk4NeIVobNRjLRb&amp;clipt=EIjFDRi4sg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <section>
+                <button id="previousBtn" onclick="previous()">Previous</button>
+                <button id="nextBtn" onclick="next()">Next</button>
+            </section>
+        </main>
+        <script src="../js/howto.js" type="text/javascript"></script>
+    </body>
+</html>
