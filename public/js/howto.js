@@ -47,7 +47,7 @@ function next() {
 }
 
 function stopVid(frameRef) {
-    console.log("Stop Vid");
+    console.log("Stop Vid" + frameRef);
     let youTubeFrame = document.getElementById(frameRef);
     youTubeFrame.src += "&enablejsapi=1";
     youTubeFrame.contentWindow.postMessage(
