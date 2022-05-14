@@ -13,7 +13,7 @@ class World {
       0.1,
       1000
     );
-    this.camera.position.z = 5;
+    this.camera.position.z = 7;
 
     this.stage = { width: 2, height: 3 };
 
