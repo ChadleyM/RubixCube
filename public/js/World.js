@@ -5,7 +5,7 @@ class World {
 
     this.container = this.game.dom.game;
 
-    this.scene = new THREE.Scene();
+    this.scene = new THREE.Scene(); 
 
     this.camera = new THREE.PerspectiveCamera(
       75,
@@ -13,7 +13,7 @@ class World {
       0.1,
       1000
     );
-    this.camera.position.z = 3;
+    this.camera.position.z = 5;
 
     this.stage = { width: 2, height: 3 };
 
