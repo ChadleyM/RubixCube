@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="css/howto.css" />
     <style lang="en" type="text/css" id="dark-mode-custom-style"></style>
     <style lang="en" type="text/css" id="dark-mode-native-style"></style>
+    <script src="./js/howToLit.js" type="module"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -29,7 +30,7 @@
         </header>
 
         <main class="center">
-            <article id="step1" class="tutorial-step">
+            <algo-step id="step1" class="tutorial-step">
                 <h2>4. Yellow Cross</h2>
                 <p>
                     Start solving the last layer making a yellow cross on the top of the cube. <br>
@@ -47,32 +48,57 @@
                 <p>In case of a horizontal line you just have to execute the permutation once.</p>
                 <img src="../assets/algo4.1.png" alt="algorithm" width="720" height="160"> <br>
                 <iframe id="frame1" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxgHZr8Y3wupdURe3gm2W0NnVxw_SogVvj&amp;clipt=ELCiGRio8hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </article>
-            <article id="step2" class="tutorial-step">
+            </algo-step>
+            <algo-step id="step2" class="tutorial-step">
                 <h2>5. Yellow edges</h2>
-                <h3>Step right up</h3>
-                <p>Just a tutorial on how rubiks cubes should be solved <br>
-                    Maybe just link to a video on how its done. Or go step by step as we know it or the details on specific algorithms 
+                <p>
+                    After making the yellow cross on the top of the cube you have to put the yellow edge pieces <br>
+                    on their final places to match the colors of the side center pieces. 
                 </p>
-                <p>If you would like see how to solve a rubiks cube. This <a href="https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/" target="_blank">website</a> provides a nice approach to solving a Rubik's cube!</p>
+                <h3>The algorithm</h3>
+                <p>
+                    Use the following algorithm to switch the front and left yellow edges. <br>
+                    You might face a situation when you have to apply this algorithm more than once.
+                </p>
+                <img src="../assets/algo5.png" alt="algorithm" width="420" height="280"> <br>
                 <iframe id="frame2" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxfN1m8PalakeiKZSleDoJBX7VqylQ3xeN&amp;clipt=EJDzGxjwxx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </article>
+            </algo-step>
             <article id="step3" class="tutorial-step">
                 <h2>6. Yellow corners in their place</h2>
-                <h3>Sub heading</h3>
-                <p>Just a tutorial on how rubiks cubes should be solved <br>
-                    Maybe just link to a video on how its done. Or go step by step as we know it or the details on specific algorithms 
+                <p>
+                    Only the last layer corners are left unsolved. First we have to get them to the right spot, <br>
+                    so don't worry about the orientation in this step. 
                 </p>
-                <p>If you would like see how to solve a rubiks cube. This <a href="https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/" target="_blank">website</a> provides a nice approach to solving a Rubik's cube!</p>
+                <h3>The algorithm</h3>
+                <p>
+                    Find a piece which is already on the right place, <br>
+                    move it to the right-front-top corner then apply the following algorithm to switch or potentially cycle, <br>
+                    the three wrong pieces marked on the image.
+                </p>
+                <img src="../assets/algo6.png" alt="algorithm" width="400" height="280"> <br>
                 <iframe id="frame3" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxgHFWNXtRpQPP62-Kou9P9aUkb6QcZ9CH&amp;clipt=EJDrIBjomyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </article>
             <article id="step4" class="tutorial-step">
                 <h2>7. Correct yellow corner and SOLVED!!!</h2>
-                <h3>Step right up</h3>
-                <p>Just a tutorial on how rubiks cubes should be solved <br>
-                    Maybe just link to a video on how its done. Or go step by step as we know it or the details on specific algorithms 
+                <p>
+                    All pieces are on their right places you just have to orient the yellow corners to finish the puzzle. <br>
+                    This proved to be the most confusing step so read the instructions and follow the steps carefully. 
                 </p>
-                <p>If you would like see how to solve a rubiks cube. This <a href="https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/" target="_blank">website</a> provides a nice approach to solving a Rubik's cube!</p>
+                <h3>The algorithm</h3>
+                <p>
+                    Hold the cube in your hand with an unsolved corner on the front-right-top corner, <br>
+                    then do the algorithm below twice or four times until that specific piece is oriented well
+                </p>
+                <p>
+                    It will look like you've messed up the whole cube but don't worry, it will be all right when all the corner pieces are oriented.
+                </p>
+                <p>
+                    Turn the top layer only to move another unsolved yellow piece to the front-right-top corner of the cube and <br>
+                    do the same <b>R' D' R D</b> again until this specific piece is ok. Be careful not to move the two bottom layers between <br> 
+                    the algorithms and never rotate the whole cube!
+                </p>
+                <img src="../assets/algo7.png" alt="algorithm" width="400" height="180"> <br>
+
                 <iframe id="frame4" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=Ugkxi8kTlpvwoiA7Yv9FnV1zSeOEtemw0UDZ&amp;clipt=ENy4Ixi8jSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </article>
             <section>

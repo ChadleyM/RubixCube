@@ -12,6 +12,8 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "lit": "^2.2.3",
+    "lit-html": "^2.2.3",
     "morgan": "~1.9.1"
   },
   "devDependencies": {
