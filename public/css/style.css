@@ -51,12 +51,13 @@ canvas {
 
 /* Add a background color on hover */
 #btn-group-cube-options button:hover {
-  border: 1px solid #e5e5e5;
-  /* border-radius:8px;  */
+  color: aqua;
 }
 
 #btn-group-cube-options button:active {
-  background-color: #e5e5e5;
-  color: #000000;
+  /* background-color: #e5e5e5;
+  color: #000000; */
+  border: 1px solid aqua;
+  border-radius:50px; 
   /* transition: 0.5s; */
 }
