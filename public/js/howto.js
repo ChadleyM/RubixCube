@@ -1,6 +1,3 @@
-window.currentStep = 1;
-window.maxNumberSteps = 4
-
 function previous() {
     console.log("Step num: " + window.currentStep + " -> previous");
     if (window.currentStep > 1) {
@@ -61,6 +58,9 @@ function stopVid(frameRef) {
 }
 
 window.onload = function init() {
+    window.currentStep = 1;
+    window.maxNumberSteps = document.getElementsByTagName("article").length;
+    console.log(window.maxNumberSteps);
     const previousBtn = document.getElementById("previousBtn");
     previousBtn.disabled = true;
 };
