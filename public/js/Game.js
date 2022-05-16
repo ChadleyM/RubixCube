@@ -18,6 +18,14 @@ class Game {
   init() {}
 
   game(show) {}
+  /*showControls() {
+    var controls_popup = document.getElementById("controlsPopup");
+    controls_popup.classList.toggle("show");
+  }
+  showControls() {
+    var controls_popup = document.getElementById("controlsPopup");
+    controls_popup.classList.toggle("show");
+  }*/
 }
 
 let startGame = () => {
