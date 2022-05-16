@@ -29,26 +29,60 @@ canvas {
   margin: auto;
 }
 
-header {  
-background-color:lightpink;  
-position:relative;  
-left: 0;  
-right: 0;  
-top: 0px;  
-height: 30px;  
-display: flex;  
-align-items: center;  
-box-shadow: 0 0 10px 0 black;  
+
+header {   
+  background-color:lightpink;  
+  position:relative;  
+  left: 0;  
+  right: 0;  
+  top: 0px;  
+  height: 3rem;  
+  display: flex;  
+  align-items: center;  
+  box-shadow: 0 0 10px 0 black;  
 }  
 header * {  
-display: inline;  
-font-size: large;
+  display: flex;  
+  font-size:medium;
 }  
 header li {  
-margin: 20px;  
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;  
 }  
 header li a {  
 color: blue;  
 text-decoration: none;  
-}  
+}
+
+.rubik-white :hover {
+  color: black;
+  background-color: white;
+}
+
+.rubik-red :hover {
+  color: black;
+  background-color: red;
+}
+
+.rubik-blue :hover {
+  color: white;
+  background-color: blue;
+}
+
+.rubik-orange :hover {
+  color: black;
+  background-color: orange;
+}
+
+.rubik-green :hover {
+  color: white;
+  background-color: green;
+}
+
+.rubik-yellow :hover {
+  color: black;
+  background-color: yellow;
+}
 
