@@ -30,7 +30,61 @@
         </header>
 
         <main class="center">
-            <algo-step id="step1" class="tutorial-step">
+            <article id="step1" class="tutorial-step">
+                <h2>1. White cross</h2>
+                <p>
+                    Let's begin with the white face. First we have to make a white cross paying attention to the color of the side center pieces. You can try to do this without reading instruction. <br>
+                    <strong>Use this stage to familiarize yourself with the puzzle and see how far you can get without help.</strong>
+                    This step is relatively intuitive because there are no solved pieces to watch out for. Just practice and don't give up easily. Try move the white edges to their places not messing up the ones already fixed. <br>
+                    You can get a little help about forming a white cross, with animated algorithms <a href="https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/step-1-first-layer-edges/">here</a>.
+                </p>
+                <h3>Example of a good white cross</h3>
+                <img src="../assets/white_cross.png" alt="algorithm" width="240" height="250"> <br>
+                <iframe id="frame1" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxBja1-irR0Z9ixClpvU-l56-CWEtExE0f&amp;clipt=EMXPChiPpA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <article id="step2" class="tutorial-step">
+                <h2>2. White corners</h2>
+                <p>
+                    In this step we have to arrange the white corner pieces to finish the first face. 
+                    If you are very persistent and you managed to do the white cross without help then you can try to do this one as well. 
+                    If you don't have patience I'll give you some clue.
+                </p>
+                <p>Twist the bottom layer so that one of the white corners is directly under the spot where it's supposed to go on the top layer. 
+                    Now, do one of the three algorithms according to the orientation of the piece, aka. in which direction the white sticker is facing. 
+                    If the white corner piece is where it belongs but turned wrong then first you have to pop it out.</p>
+                <h3>The algorithms</h3>
+                    <img src="../assets/white_corners_1.png" width="230" height="250" style="float: left; margin-right: 1%; margin-bottom: 0.5em;" alt="Image showing the white face on top with the orange face on the front and the green face on the left. The bottom right corner on the front face is orange and the bottom left corner on the right face is orange. The algorithm shown is right prime, down prime, right.">
+                    <img src="../assets/white_corners_2.png" width="230" height="250" style="float: left; margin-right: 1%; margin-bottom: 0.5em;">
+                    <img src="../assets/white_corners_3.png" width="230" height="250" style="float: left; margin-right: 1%; margin-bottom: 0.5em;">
+                    <p style="clear: both;"></p>
+                <h3>Completed white face</h3>
+                    <img src="../assets/white_corners_solved.png" alt="algorithm" width="230" height="250"> <br>
+                <h3>Alternate method</h3>
+                <p>The video shows an alternate method where you will use the same <strong>R U R' U'</strong> algorithm to solve individual corner pieces.</p>
+                <iframe id="frame2" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=Ugkx_iMp4cjIjMyg49u4JgVsT6dBtk6VLV7w&amp;clipt=ELC9EBjw8hM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <article id="step3" class="tutorial-step">
+                <h2>3. Second layer</h2>
+                <p>
+                    Until this point the procedure was pretty straight forward but from now on we have to use algorithms. 
+                    We can forget the completed white face so let's turn the cube upside down to focus on the unsolved side. 
+                </p>
+                <p>In this step we are completing the first two layers (F2L). There are two symmetric algorithms we have to use in this step. 
+                    They're called the <strong>Right</strong> and <strong>Left</strong> algorithms. 
+                    These algorithms insert the Up-Front edge piece from the top layer to the middle layer while not messing up the solved white face. <br>
+                    If none of the pieces in the top layer are already lined up like in the images below, then turn the top layer until one of the edge pieces in the top layer matches one of the images below. 
+                    Then follow the matching algorithm for that orientation.
+                </p>
+                <h3>The algorithms</h3>
+                    <img src="../assets/left_algorithm.png" width="350" height="300" style="float: left; margin-right: 1%; margin-bottom: 0.5em;">
+                    <img src="../assets/right_algorithm.png" width="350" height="300" style="float: left; margin-right: 1%; margin-bottom: 0.5em;">
+                    <p style="clear: both;"></p>
+                <h3>Solved second layer</h3>
+                <img src="../assets/second_layer_solved.png" alt="algorithm" width="230" height="250"> <br>
+                <h3>Video demonstration of a sligtly alternate method</h3>
+                <iframe id="frame3" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=Ugkx-n-u6ny8XrRY1EkpO2wn98NRMvkq_Tf7&amp;clipt=EKDgFBi4zxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <article id="step4" class="tutorial-step">
                 <h2>4. Yellow Cross</h2>
                 <p>
                     Start solving the last layer making a yellow cross on the top of the cube. <br>
@@ -47,9 +101,9 @@
                 </p>
                 <p>In case of a horizontal line you just have to execute the permutation once.</p>
                 <img src="../assets/algo4.1.png" alt="algorithm" width="720" height="160"> <br>
-                <iframe id="frame1" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxgHZr8Y3wupdURe3gm2W0NnVxw_SogVvj&amp;clipt=ELCiGRio8hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </algo-step>
-            <algo-step id="step2" class="tutorial-step">
+                <iframe id="frame4" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxgHZr8Y3wupdURe3gm2W0NnVxw_SogVvj&amp;clipt=ELCiGRio8hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <article id="step5" class="tutorial-step">
                 <h2>5. Yellow edges</h2>
                 <p>
                     After making the yellow cross on the top of the cube you have to put the yellow edge pieces <br>
@@ -61,9 +115,9 @@
                     You might face a situation when you have to apply this algorithm more than once.
                 </p>
                 <img src="../assets/algo5.png" alt="algorithm" width="420" height="280"> <br>
-                <iframe id="frame2" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxfN1m8PalakeiKZSleDoJBX7VqylQ3xeN&amp;clipt=EJDzGxjwxx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </algo-step>
-            <article id="step3" class="tutorial-step">
+                <iframe id="frame5" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxfN1m8PalakeiKZSleDoJBX7VqylQ3xeN&amp;clipt=EJDzGxjwxx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <article id="step6" class="tutorial-step">
                 <h2>6. Yellow corners in their place</h2>
                 <p>
                     Only the last layer corners are left unsolved. First we have to get them to the right spot, <br>
@@ -76,9 +130,9 @@
                     the three wrong pieces marked on the image.
                 </p>
                 <img src="../assets/algo6.png" alt="algorithm" width="400" height="280"> <br>
-                <iframe id="frame3" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxgHFWNXtRpQPP62-Kou9P9aUkb6QcZ9CH&amp;clipt=EJDrIBjomyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="frame6" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxgHFWNXtRpQPP62-Kou9P9aUkb6QcZ9CH&amp;clipt=EJDrIBjomyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </article>
-            <article id="step4" class="tutorial-step">
+            <article id="step7" class="tutorial-step">
                 <h2>7. Correct yellow corner and SOLVED!!!</h2>
                 <p>
                     All pieces are on their right places you just have to orient the yellow corners to finish the puzzle. <br>
@@ -99,7 +153,7 @@
                 </p>
                 <img src="../assets/algo7.png" alt="algorithm" width="400" height="180"> <br>
 
-                <iframe id="frame4" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=Ugkxi8kTlpvwoiA7Yv9FnV1zSeOEtemw0UDZ&amp;clipt=ENy4Ixi8jSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="frame7" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=Ugkxi8kTlpvwoiA7Yv9FnV1zSeOEtemw0UDZ&amp;clipt=ENy4Ixi8jSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </article>
             <section>
                 <button id="previousBtn" class="navButtons" onclick="previous()">Previous</button>
