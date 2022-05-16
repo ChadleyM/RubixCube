@@ -1,5 +1,5 @@
 window.currentStep = 1;
-window.maxNumberSteps = 4;
+window.maxNumberSteps = 3;
 
 function previous() {
     console.log("Step num: " + window.currentStep + " -> previous");
