@@ -1,0 +1,51 @@
+.sidebar {
+    border-radius: 0.5rem;
+    text-align:center;
+    height: 70%;
+    width: 15%;
+    position: absolute;
+    left: 0.1rem;
+    top: 10%;
+    padding-top: 0.1em;
+    background-color: rgb(229, 230, 173);
+    transition: width 0.75s;
+}
+
+.sidebar ul {
+    padding-left: 0px;
+}
+    
+.sidebar ul li {
+    text-align: center;
+    color: red;
+    padding-left: 0px;
+    padding-top: 0.3em;
+    padding-bottom: 0.15em;
+    font-size: 24px;
+    display: block;
+}
+
+.sidebarClosed {
+    border-radius: 0.5rem;
+    text-align:center;
+    height: 70%;
+    width: 3rem;
+    position: absolute;
+    left: 0.1rem;
+    top: 10%;
+    padding-top: 0.1em;
+    background-color: rgb(229, 230, 173);
+    transition: width 0.75s;
+}
+
+.sidebarClosed ul {
+    display: none;
+}
+
+.sidebarClosed p {
+    display: none;
+}
+
+.closeButton {
+    float: right;
+}

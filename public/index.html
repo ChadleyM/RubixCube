@@ -1,17 +1,48 @@
 <!DOCTYPE html>
-<html>
+<!--Going to need to add a header for semantics. Doesnt seem like it gets automatically added-->
+<html lang="en">
   <head>
-    <title>Rubix</title>
+    <title>Rubix Cube</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
+  <body style="background-color: #FAF8F6;">
     <!--content-->
+    <header>
+      <nav>
+        <ul>
+          <li class="rubik-white">
+            <a href="/">Home (logo)</a>
+          </li>
+          <li class="rubik-red">
+            <a href="/play-game/play-game.html">Play Game</a>
+          </li>
+          <li class="rubik-blue">
+            <a href="/how-to-play/how-to-play.html">How to Play</a>
+          </li>
+          <li class="rubik-orange">
+            <a href="/leaderboard/leaderboard.html">Leaderboard</a>
+          </li>
+          <li class="rubik-green">
+            <a href="/about/about.html">About</a>
+          </li>
+          <li class="rubik-yellow">
+            <a href="/algorithms/algorithms.html">Algorithms</a>
+          </li>
+          <li>
+            Misc info  <!--<a></a> instead-->
+          </li>
+        </ul>
+      </nav>
+    </header>
     <container>
       <h1>Rubix Cube!</h1>
       <!--3D canvas-->
-      <div id="game"></div>
+      <section id="game"></section>
     </container>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
     <script src="../dist/bundle.js" type="text/javascript"></script>
+
   </body>
 </html>
