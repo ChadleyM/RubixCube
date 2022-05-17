@@ -108,11 +108,7 @@ Please install the below required software in order to run the project.
    ```
 4. Run the app in dev mode
    ```sh
-   npm run build
-   ```
-   _OR_ run the app in prod mode
-   ```sh
-   npm run build:prod
+   npm run dev
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
