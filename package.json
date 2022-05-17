@@ -4,23 +4,22 @@
   "main": "app.js",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "build": "webpack-dev-server",
-    "build:prod": "webpack -p"
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js && node app.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
-    "lit": "^2.2.3",
-    "lit-html": "^2.2.3",
     "morgan": "~1.9.1"
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.9.0"
+    "webpack-dev-server": "^4.9.0",
+    "webpack-merge": "^4.1.0"
   }
 }

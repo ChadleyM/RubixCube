@@ -1,9 +1,6 @@
 body {
-  padding: 30px;
+  padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  height: 125vh;
-  padding: 30px;
-  background-size: cover;
 }
 
 h1 {
@@ -19,8 +16,6 @@ canvas {
   height: 100%;
 }
 
-/* --------------------------- */
-
 .logo {
   float: left;
   height: 80px;
@@ -34,36 +29,60 @@ canvas {
   margin: auto;
 }
 
-table {
- padding: 3em;
- width: 100%;
+
+header {   
+  background-color:lightpink;  
+  position:relative;  
+  left: 0;  
+  right: 0;  
+  top: 0px;  
+  height: 3rem;  
+  display: flex;  
+  align-items: center;  
+  box-shadow: 0 0 10px 0 black;  
+}  
+header * {  
+  display: flex;  
+  font-size:medium;
+}  
+header li {  
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;  
+}  
+header li a {  
+color: blue;  
+text-decoration: none;  
 }
 
-th, td {
-  border: 1px solid black;
+.rubik-white :hover {
+  color: black;
+  background-color: white;
 }
 
-header {  
+.rubik-red :hover {
+  color: black;
+  background-color: red;
+}
+
+.rubik-blue :hover {
+  color: white;
+  background-color: blue;
+}
+
+.rubik-orange :hover {
+  color: black;
   background-color: orange;
-  position:relative;
-  left: 0;
-  right: 0;
-  top: 5px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 0 25px 0 black;
 }
 
-header * {
-  display: inline;
+.rubik-green :hover {
+  color: white;
+  background-color: green;
 }
 
-header li {
-  margin: 20px;
+.rubik-yellow :hover {
+  color: black;
+  background-color: yellow;
 }
 
-header li a {
-  color: blue;
-  text-decoration: none;
-}
