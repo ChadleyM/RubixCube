@@ -10,26 +10,26 @@ toggleSidebarOpen.addEventListener('click',openSidebar);
 
 //Change into one function --> check classlist and then toggle depending
 function closeSidebar() {
-    document.getElementById("sidebar").style.width = "20px";
-    sidebar.classList.add("sidebarClosed");
-    sidebar.classList.remove('sidebar');
     console.log('Closing sidebar');
+    let tutorialNavPanel = document.getElementById("algo-directory").children;
+    for (let index = 0; index < tutorialNavPanel.length; index++) {
+        tutorialNavPanel[index].style.display = "block";
+    }
 }
 
 function openSidebar() {
-    document.getElementById("sidebar").style.width = "250px";
-    sidebar.classList.remove("sidebarClosed");
-    sidebar.classList.add('sidebar');
     console.log('Opening Sidebar');
+    let tutorialNavPanel = document.getElementById("algo-directory").children;
+    for (let index = 0; index < tutorialNavPanel.length; index++) {
+        tutorialNavPanel[index].style.display = "none";
+    }
 }
 
 function toggleSidebar() {
     if(sidebar.classList == "sidebar") {
         sidebar.classList.add('sidebarClosed');
         sidebar.classList.remove('sidebar')
-    }
-    else if(sidebar.classList == "sidebarClosed") {
-        sidebar.classList.remove('sidebarClosed');
-        sidebar.classList.add('sidebar')
+        openSidebar();
+        closeSidebar();
     }
 }
