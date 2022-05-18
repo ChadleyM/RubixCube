@@ -4,8 +4,8 @@
   "main": "app.js",
   "private": true,
   "scripts": {
-    "start": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js && node app.js"
+    "dev": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

@@ -30,10 +30,6 @@ function toggleSidebar() {
         sidebar.classList.add('sidebarClosed');
         sidebar.classList.remove('sidebar')
         openSidebar();
-    }
-    else if(sidebar.classList == "sidebarClosed") {
-        sidebar.classList.remove('sidebarClosed');
-        sidebar.classList.add('sidebar')
         closeSidebar();
     }
 }
