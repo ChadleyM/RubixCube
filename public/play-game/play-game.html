@@ -41,13 +41,21 @@
         <h1>Rubix Cube!</h1>
         <!--3D canvas-->
               <!--3D canvas-->
-      <div id="game"></div>
+      <div id="game-container">
+        <div id="game"></div>
+        <div id="a">
+          <button></button>
+        </div>
+        <div id="b">
+          <button></button>
+        </div>
+      </div>
       <menu id="btn-group-cube-options">
         <button>Shuffle</button>
         <button>Solve</button>
       </menu>
       <!--Controls-->
-      <div class ="cube-controls" id = "controlsPopup">
+      <!-- <div class ="cube-controls" id = "controlsPopup">
         <title>Controls</title>
         <br/>
         <section >
@@ -68,7 +76,7 @@
           <button class ='btn-inverse'>Inverse</button>
       </section>
       </div>
-        
+         -->
         <section id="game"></section>
       </container>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>

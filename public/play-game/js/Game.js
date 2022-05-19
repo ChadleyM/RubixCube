@@ -4,8 +4,10 @@ import { Cube } from "./Cube.js";
 
 class Game {
   constructor() {
+
     this.dom = {
       game: document.querySelector("#game"),
+      canvas: document.querySelector("#game"),
     };
 
     this.world = new World(this);
