@@ -16,8 +16,6 @@
     margin-left: 17%;
     margin-right: 12%;
     padding: 0%;
-    /* padding-left: 17%;
-    padding-right: 15%; */
 }
 
 #step1 {
@@ -54,29 +52,6 @@
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
-
-/* figure {
-    border: 1px #cccccc dotted;
-    padding: 4px;
-    margin: auto;
-    width: 30vw;
-} */
-/* 
-#figLeft {
-    float: left;
-}
-
-#figRight {
-    float: right;
-} */
-  
-/* figcaption {
-    background-color: inherit;
-    color: inherit;
-    font-style: italic;
-    padding: 2px;
-    text-align: center;
-} */
 
 .video-frame {
     width: 56vw;
