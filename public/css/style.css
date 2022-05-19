@@ -33,8 +33,10 @@
 
 .homepageLogo {
   height: auto;
-  width:35vw;
-  padding-top: 15%;
+  width:25vw;
+  padding-top: 0%;
+  padding-bottom: 5%;
+  padding-left: 25%;
 }
 
 .subpage {
@@ -131,7 +133,7 @@ canvas {
 }
 
 main {
-  padding: 8%;
+  padding: 6%;
   text-align: center;
   height: 100%;
   margin: auto;
@@ -194,6 +196,7 @@ main {
 
   .homepageLogo {
     padding-top: 10%;
+    padding-left: 0;
   }
 }
 
