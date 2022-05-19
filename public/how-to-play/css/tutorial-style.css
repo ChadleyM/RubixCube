@@ -1,34 +1,37 @@
 .sidebar {
     text-align:center;
-    height: 70%;
+    height: fit-content;
     width: 15%;
-    position: fixed;
+    position: absolute;
     left: 0.1rem;
     top: 10%;
-    padding-top: 0.1em;
+    padding: 0.1em;
     background-color: rgb(229, 230, 173);
     transition: width 1s;
+    transition-timing-function: ease;
 }
 
 .sidebar-button-right {
     height: 2rem;
     width: 2rem;
     transition: width 1.5s;
+    transition-timing-function: ease;
 }
 
 .sidebar-button-left {
     height: 2rem;
     width: 3rem;
     transition: width 1.5s;
+    transition-timing-function: ease;
 }
 
 .sidebar-icon-right {
-    animation: rotationREV 0.75s linear;
+    animation: rotationREV 0.75s ease;
     transform: rotate(180deg);
 }
 
 .sidebar-icon-left {
-    animation: rotationFWD 0.75s linear;
+    animation: rotationFWD 0.75s ease;
     transform: rotate(0deg);
 }
 
@@ -66,14 +69,14 @@
 
 .sidebarClosed {
     text-align:center;
-    height: 70%;
+    height: fit-content;
     width: 3rem;
     position: absolute;
     left: 0.1rem;
     top: 10%;
     padding-top: 0.1em;
     background-color: rgb(229, 230, 173);
-    transition: width 1s;
+    transition-timing-function: ease;
 }
 
 .sidebarClosed ol {
@@ -87,3 +90,23 @@
 .closeButton {
     float: right;
 }
+
+/* Tablets */
+@media (max-width: 1040px) {
+    .sidebar {
+      padding: 1.5rem;
+      font-size: 1.25vh;
+      /* height: 45%; */
+      width: 90%;
+      text-transform: uppercase;
+    }
+  }
+  
+  /* FOR MOBILE DEVICES: Android, iPhone, etc */
+  @media (max-width: 810px) {
+    .sidebar {
+      /* display: none; */
+      width: 90%;
+      text-align: center;
+    }
+  }
