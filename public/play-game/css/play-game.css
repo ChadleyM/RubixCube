@@ -1,0 +1,110 @@
+
+body {
+    margin: 0;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+  
+h1 {
+    text-align: center;
+}
+  
+container{
+    padding: 10%;
+}
+  
+.game-container{
+    display: flex;
+}
+
+#game {
+    /* display: flex;  
+    justify-content: center; */
+    height: 50%;
+    width: 50%;
+}
+  
+canvas {
+    width: 100%;
+    height: 100%;
+}
+  
+.moves {
+    width: 25%;
+    height: 50%;
+}
+
+.movesHeader {
+  width: 100%;
+  height: 10%;
+  display: flex;
+}
+
+.headerText {
+    /* display: inline-block; */
+    width: 90%;   
+    height: 100%; 
+    background-color: #000;
+    color: #FFF;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    /* display: inline-block; */
+    width: 10%;
+    height: 100%;
+    background-color: #FFF;
+    border: none;
+    /* vertical-align: middle; */
+  }
+
+  
+.movesContent {
+  width: 100%;
+  height: 90%; 
+}
+  
+  /* Style the collapsible content. Note: hidden by default
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  } */
+  
+.cubeControls {
+    width: 25%;
+    height: 100%;
+}
+  
+  .rubik-white :hover {
+    color: black;
+    background-color: white;
+  }
+  
+  .rubik-red :hover {
+    color: black;
+    background-color: red;
+  }
+  
+  .rubik-blue :hover {
+    color: white;
+    background-color: blue;
+  }
+  
+  .rubik-orange :hover {
+    color: black;
+    background-color: orange;
+  }
+  
+  .rubik-green :hover {
+    color: white;
+    background-color: green;
+  }
+  
+  .rubik-yellow :hover {
+    color: black;
+    background-color: yellow;
+  }
+  

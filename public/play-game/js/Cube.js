@@ -17,7 +17,6 @@ class Cube {
     this.object = new THREE.Object3D();
     this.game.world.scene.add(this.object);
     this.cubeFaces = Array()
-    console.log('bruh')
   }
 
   init() { 
