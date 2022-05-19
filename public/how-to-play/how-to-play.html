@@ -28,8 +28,8 @@
                 You can get a little help about forming a white cross, with animated algorithms <a href="https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/step-1-first-layer-edges/">here</a>.
             </p>
             <h3>Example of a good white cross</h3>
-            <img src="assets/white_cross.png" alt="algorithm" width="240" height="250"> <br>
-            <iframe id="frame1" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxBja1-irR0Z9ixClpvU-l56-CWEtExE0f&amp;clipt=EMXPChiPpA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img id="wcImg" class="cube-image" src="assets/white_cross_trans.png" alt="Image of a rubik's cube with the top edges forming a white cross and the center edges of the side faces matching the center colours of the faces"> <br>
+            <iframe id="frame1" class="video-frame" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxBja1-irR0Z9ixClpvU-l56-CWEtExE0f&amp;clipt=EMXPChiPpA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
         <article id="step2" class="tutorial-step">
             <h2>2. White corners</h2>
@@ -42,15 +42,15 @@
                 Now, do one of the three algorithms according to the orientation of the piece, aka. in which direction the white sticker is facing. 
                 If the white corner piece is where it belongs but turned wrong then first you have to pop it out.</p>
             <h3>The algorithms</h3>
-                <img src="assets/white_corners_1.png" width="230" height="250" style="float: left; margin-right: 1%; margin-bottom: 0.5em;" alt="Image showing the white face on top with the orange face on the front and the green face on the left. The bottom right corner on the front face is orange and the bottom left corner on the right face is orange. The algorithm shown is right prime, down prime, right.">
-                <img src="assets/white_corners_2.png" width="230" height="250" style="float: left; margin-right: 1%; margin-bottom: 0.5em;">
-                <img src="assets/white_corners_3.png" width="230" height="250" style="float: left; margin-right: 1%; margin-bottom: 0.5em;">
+                <img id = "wcimage1" class="cube-image" src="assets/white_corners_1_trans.png" alt="Image showing the white face on top with the orange face on the front and the green face on the left. The bottom right corner on the front face is orange and the bottom left corner on the right face is white. The algorithm shown is right prime, down prime, right.">
+                <img id = "wcimage2" class="cube-image" src="assets/white_corners_2_trans.png" alt="Image showing the white face on top with the orange face on the front and the green face on the left. The bottom right corner on the front face is white and the bottom left corner on the right face is green. The algorithm shown is front, down, front prime.">
+                <img id = "wcimage3" class="cube-image" src="assets/white_corners_3_trans.png" alt="Image showing the white face on top with the orange face on the front and the green face on the left. The bottom right corner on the front face is green and the bottom left corner on the right face is orange. The algorithm shown is front, left, down twice, left prime, front prime.">
                 <p style="clear: both;"></p>
             <h3>Completed white face</h3>
-                <img src="assets/white_corners_solved.png" alt="algorithm" width="230" height="250"> <br>
+                <img class="cube-image" src="assets/white_corners_solved_trans.png" alt="algorithm" alt="Image showing the white face on top with the orange face on the front and the green face on the left. The orange and green faces have a T of mathing colours at the top."> <br>
             <h3>Alternate method</h3>
             <p>The video shows an alternate method where you will use the same <strong>R U R' U'</strong> algorithm to solve individual corner pieces.</p>
-            <iframe id="frame2" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=Ugkx_iMp4cjIjMyg49u4JgVsT6dBtk6VLV7w&amp;clipt=ELC9EBjw8hM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="frame2" class="video-frame" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=Ugkx_iMp4cjIjMyg49u4JgVsT6dBtk6VLV7w&amp;clipt=ELC9EBjw8hM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
         <article id="step3" class="tutorial-step">
             <h2>3. Second layer</h2>
@@ -65,13 +65,20 @@
                 Then follow the matching algorithm for that orientation.
             </p>
             <h3>The algorithms</h3>
-                <img src="assets/left_algorithm.png" width="350" height="300" style="float: left; margin-right: 1%; margin-bottom: 0.5em;">
-                <img src="assets/right_algorithm.png" width="350" height="300" style="float: left; margin-right: 1%; margin-bottom: 0.5em;">
-                <p style="clear: both;"></p>
+            <p>The <strong>left side algorithm</strong> is used when the center top edge on the front face is matched to the center colour of the front face, but the top side of the center top edge is the same colour as the center colour of the left face.
+            The algorithm is <strong>U' L' U L U F U' F'</strong>.</p>
+            <img class="algorithm-image" src="assets/left_algorithm_trans.png" alt="Image showing the algorithm associated with the left side.">
+            <p></p>
+            <img class="cube-image" src="assets/left_algorithm_cube_trans.png" alt="Image showing a Rubik's cube with the front face orange and the right face blue. The the top center edge of the front face is orange on the front and green on the top.">
+            <p>The <strong>right side algorithm</strong> is used when the center top edge on the front face is matched to the center colour of the front face, but the top side of the center top edge is the same colour as the center colour of the right face.
+            The algorithm is <strong>U R U' R' U' F' U F</strong>.</p>
+            <img class="algorithm-image" src="assets/right_algorithm_trans.png" alt="Image showing the algorithm associated with the right side.">
+            <p></p>
+            <img class="cube-image" src="assets/right_algorithm_cube_trans.png" alt="Image showing a Rubik's cube with the front face orange and the right face blue. The the top center edge of the front face is orange on the front and blue on the top.">
             <h3>Solved second layer</h3>
-            <img src="assets/second_layer_solved.png" alt="algorithm" width="230" height="250"> <br>
+            <img class="cube-image" src="assets/second_layer_solved_trans.png" alt="Image showing the two bottom rows solved."> <br>
             <h3>Video demonstration of a sligtly alternate method</h3>
-            <iframe id="frame3" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=Ugkx-n-u6ny8XrRY1EkpO2wn98NRMvkq_Tf7&amp;clipt=EKDgFBi4zxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="frame3" class="video-frame" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=Ugkx-n-u6ny8XrRY1EkpO2wn98NRMvkq_Tf7&amp;clipt=EKDgFBi4zxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
         <article id="step4" class="tutorial-step">
             <h2>4. Yellow Cross</h2>
@@ -83,14 +90,14 @@
             <p>
                 We can get three possible patterns on the top. Use this algorithm to go from one state to the other.
             </p>
-            <img src="assets/algo4.png" alt="algorithm" width="240" height="50"> <br>
+            <img class="algorithm-image" src="assets/algo4_trans.png" alt="Image showing the algorithm front, right, up, right prime, up prime, front prime."> <br>
             <p>
                 When you see a dot you have to apply the algorithm three times. If you have a yellow "L" shape then onlye twice, <br> 
                 holding the cube in your hands as seen on the image below.
             </p>
             <p>In case of a horizontal line you just have to execute the permutation once.</p>
-            <img src="assets/algo4.1.png" alt="algorithm" width="720" height="160"> <br>
-            <iframe id="frame4" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxgHZr8Y3wupdURe3gm2W0NnVxw_SogVvj&amp;clipt=ELCiGRio8hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img class="cross-image" src="assets/algo4.1_trans.png" alt="Image showing how the top face transitions from a dot to an L to a horizontal line to a cross."> <br>
+            <iframe id="frame4" class="video-frame" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxgHZr8Y3wupdURe3gm2W0NnVxw_SogVvj&amp;clipt=ELCiGRio8hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
         <article id="step5" class="tutorial-step">
             <h2>5. Yellow edges</h2>
@@ -103,8 +110,8 @@
                 Use the following algorithm to switch the front and left yellow edges. <br>
                 You might face a situation when you have to apply this algorithm more than once.
             </p>
-            <img src="assets/algo5.png" alt="algorithm" width="420" height="280"> <br>
-            <iframe id="frame5" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxfN1m8PalakeiKZSleDoJBX7VqylQ3xeN&amp;clipt=EJDzGxjwxx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img id="algo5" class="algorithm-image" src="assets/algo5_trans.png" alt="Image showing the algorithm right, up, right prime, up, right, up twice, right prime, up. It then shows that the top center edge of the front face will switch places with the top center edge on the left face."> <br>
+            <iframe id="frame5" class="video-frame" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxfN1m8PalakeiKZSleDoJBX7VqylQ3xeN&amp;clipt=EJDzGxjwxx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
         <article id="step6" class="tutorial-step">
             <h2>6. Yellow corners in their place</h2>
@@ -118,8 +125,8 @@
                 move it to the right-front-top corner then apply the following algorithm to switch or potentially cycle, <br>
                 the three wrong pieces marked on the image.
             </p>
-            <img src="assets/algo6.png" alt="algorithm" width="400" height="280"> <br>
-            <iframe id="frame6" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxgHFWNXtRpQPP62-Kou9P9aUkb6QcZ9CH&amp;clipt=EJDrIBjomyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img id="algo6" src="assets/algo6_trans.png" alt="Image showing the algorithm up, right, up prime, left prime, up, right prime, up prime, left. It then shows how the top front right corner stays in place while the other top corners switch places."> <br>
+            <iframe id="frame6" class="video-frame" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=UgkxgHFWNXtRpQPP62-Kou9P9aUkb6QcZ9CH&amp;clipt=EJDrIBjomyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
         <article id="step7" class="tutorial-step">
             <h2>7. Correct yellow corner</h2>
@@ -141,9 +148,9 @@
                 do the same <b>R' D' R D</b> again until this specific piece is ok. Be careful not to move the two bottom layers between <br> 
                 the algorithms and never rotate the whole cube!
             </p>
-            <img src="assets/algo7.png" alt="algorithm" width="400" height="180"> <br>
+            <img id="algo7" src="assets/algo7_trans.png" alt="Image showing that the corners of the top face are in the right positions but wrong orientations and the algorithm to solve it: right prime, down prime, right, down."> <br>
 
-            <iframe id="frame7" width="560" height="315" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=Ugkxi8kTlpvwoiA7Yv9FnV1zSeOEtemw0UDZ&amp;clipt=ENy4Ixi8jSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="frame7" class="video-frame" src="https://www.youtube.com/embed/KGvQRaK1mvs?clip=Ugkxi8kTlpvwoiA7Yv9FnV1zSeOEtemw0UDZ&amp;clipt=ENy4Ixi8jSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
         <section>
             <button id="previousBtn" class="navButtons" onclick="previous()">Previous</button>

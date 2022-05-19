@@ -12,8 +12,10 @@
 }
 
 .tutorial-content {
-    margin: 0em 30em 4em 30em;
-    padding: 0;
+    margin: 0%;
+    margin-left: 17%;
+    margin-right: 12%;
+    padding: 0%;
 }
 
 #step1 {
@@ -49,4 +51,45 @@
     background-color: gre;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+.video-frame {
+    width: 56vw;
+    height: 32vh;
+}
+
+.cube-image {
+    max-width: 240px;
+    width: 45vw;
+    height: auto;
+}
+
+.algorithm-image {
+    max-width: 410px;
+    width: 65vw;
+    height: auto;
+}
+
+.cross-image {
+    max-width: 720px;
+    width: 75vw;
+    height: auto;
+}
+
+#algo5 {
+    max-width: 720px;
+    width: 75vw;
+    height: auto;
+}
+
+#algo6 {
+    max-width: 420px;
+    width: 65vw;
+    height: auto;
+}
+
+#algo7 {
+    max-width: 720px;
+    width: 75vw;
+    height: auto;
 }
