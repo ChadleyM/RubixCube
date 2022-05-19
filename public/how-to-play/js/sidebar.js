@@ -1,7 +1,6 @@
 //Need to refine this. ++Need to remove open sidebar button and just make it modular
 
 const toggleSidebarButton = document.getElementById("sidebarButton");
-const toggleSidebarOpen = document.getElementById("sidebarOpen");
 const sidebar = document.getElementById("sidebar");
 const sidebarIcon = document.getElementById("sidebar-icon");
 
