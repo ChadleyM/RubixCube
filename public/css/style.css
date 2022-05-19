@@ -1,16 +1,48 @@
-/*
-
 @font-face {
-    font-family: sikatFont;
-    src: public/assets/fonts/Sikat-8MrrB.ttf;
-}
-  
-h2 {
-    font-family: sikatFont;
-    color: white;
+  font-family: 'sikatFont';
+  src: url('/assets/fonts/Sikat-8MrrB.ttf')  format('truetype');
 }
 
-*/
+:root {
+
+  --OffWhite: #F4EBDC;
+  --Black: #010101;
+  --White: #FFFEFF;
+  --Yellow: #FEEF05;
+  --Blue: #016BB5;
+  --Orange: #F5923D;
+  --Red: #D01242;
+  --Gray: #707070;
+  --Green: #009A66;
+
+  /* To call: color: var(var name);
+          eg: color: var(--OffWhite) */
+}
+
+.homepage {
+  text-align: left;
+  display: flex;
+  padding: 0;
+  justify-content: left;
+  margin: 0;
+  font-family: 'sikatFont';
+  color: black;
+  font-size: 6vh;
+  width: 45%;
+}
+
+.homepageLogo {
+  text-align: right;
+  display: flex;
+  padding: 0;
+  justify-content: right;
+  margin: 0;
+}
+
+.subpage {
+  justify-content: center;
+  font-size: 2vh;
+}
 
 body {
   margin: 0;
@@ -71,10 +103,11 @@ canvas {
   text-transform: uppercase;
 }
 
-.center {
+main {
   padding: 10%;
+  display: flex;
   text-align: center;
-  height: 50%;
+  height: 100%;
   margin: auto;
 }
 
