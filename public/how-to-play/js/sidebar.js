@@ -5,7 +5,7 @@ const sidebar = document.getElementById("sidebar");
 const sidebarIcon = document.getElementById("sidebar-icon");
 
 toggleSidebarButton.addEventListener('click', toggleSidebar);
-toggleSidebarOpen.addEventListener('click',openSidebar);
+toggleSidebarOpen.addEventListener('click', openSidebar);
 
 
 //Change into one function --> check classlist and then toggle depending
@@ -29,7 +29,7 @@ function openSidebar() {
 
 function toggleSidebar() {
     // sidebar
-    if(sidebar.classList == "sidebar") {
+    if (sidebar.classList == "sidebar") {
         sidebar.classList.add('sidebarClosed');
         sidebar.classList.remove('sidebar')
         toggleSidebarButton.classList.add('sidebar-button-left')
@@ -38,7 +38,7 @@ function toggleSidebar() {
         sidebarIcon.classList.remove('sidebar-icon-left')
         openSidebar();
     }
-    else if(sidebar.classList == "sidebarClosed") {
+    else if (sidebar.classList == "sidebarClosed") {
         sidebar.classList.remove('sidebarClosed');
         sidebar.classList.add('sidebar')
         toggleSidebarButton.classList.remove('sidebar-button-left')

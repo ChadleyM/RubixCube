@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <!--Going to need to add a header for semantics. Doesnt seem like it gets automatically added-->
 <html lang="en">
-  <head>
-    <title>Leaderboard</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./css/leaderboard-styles.css"
-    />
-    <script type="module" src="../js/Navbar.js" async></script>
-    <script type="module" src="./js/leaderboard.js" async></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body style="background-color: #fbbb62">
-    <!--content-->
-    <header class="navContainer" id="navLocation"></header>
-    <main class="center">
-        <section>
-            <h1>Here is the leaderboard</h1>
-            <table id="leaderboard-table">
-              <tr>
-                <th>Username</th>
-                <th>Best Score</th>
-                <th>Best Time</th>
-                <th>Least Moves Made</th>
-              </tr>
-            </table>
-        </section>
-    </main>
-  </body>
+
+<head>
+  <title>Leaderboard</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./css/leaderboard-styles.css" />
+  <script type="module" src="../js/Navbar.js" async></script>
+  <script type="module" src="./js/leaderboard.js" async></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body style="background-color: #fbbb62">
+  <!--content-->
+  <header class="navContainer" id="navLocation"></header>
+  <main class="center">
+    <section>
+      <h1>Here is the leaderboard</h1>
+      <table id="leaderboard-table">
+        <tr>
+          <th>rank</th>
+          <th>name</th>
+          <th>time</th>
+        </tr>
+      </table>
+    </section>
+  </main>
+</body>
+
 </html>
