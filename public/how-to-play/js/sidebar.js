@@ -1,10 +1,10 @@
 //Need to refine this. ++Need to remove open sidebar button and just make it modular
 
 const toggleSidebarButton = document.getElementById("sidebarButton");
-const toggleSidebarOpen = document.getElementById("sidebarOpen");
 const sidebar = document.getElementById("sidebar");
 
 toggleSidebarButton.addEventListener('click', toggleSidebar);
+<<<<<<< Updated upstream
 toggleSidebarOpen.addEventListener('click',openSidebar);
 
 
@@ -24,6 +24,8 @@ function openSidebar() {
         tutorialNavPanel[index].style.display = "none";
     }
 }
+=======
+>>>>>>> Stashed changes
 
 function toggleSidebar() {
     if(sidebar.classList == "sidebar") {
