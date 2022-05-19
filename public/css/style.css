@@ -27,21 +27,18 @@
   margin: 0;
   font-family: 'sikatFont';
   color: black;
-  font-size: 6vh;
-  width: 45%;
+  font-size: 4vw;
 }
 
 .homepageLogo {
-  text-align: right;
-  display: flex;
-  padding: 0;
-  justify-content: right;
-  margin: 0;
+  height: auto;
+  width:35vw;
+  padding-top: 15%;
 }
 
 .subpage {
   justify-content: center;
-  font-size: 2vh;
+  font-size: 2vw;
 }
 
 body {
@@ -104,11 +101,35 @@ canvas {
 }
 
 main {
-  padding: 10%;
-  display: flex;
+  padding: 8%;
   text-align: center;
   height: 100%;
   margin: auto;
+}
+
+.homeContent {
+  display: flex;
+}
+
+.playGameButton {
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: auto;
+  width: 50vw;
+  height: 8vh;
+}
+
+.playGameButton :hover {
+  background-color: #707070;
+}
+
+.playGameButton a {
+  justify-content: center;
+  font-family: 'sikatFont';
+  text-decoration: none;
+  font-size:3em;
 }
 
 .menuBtn{
@@ -130,6 +151,20 @@ main {
     padding: 1.5rem;
     font-size: 1.5vh;
     text-transform: uppercase;
+  }
+
+  .homeContent {
+    display: block;
+  }
+
+  .homepage {
+    padding-top: 10%;
+  justify-content: center;  
+  }
+
+
+  .homepageLogo {
+    padding-top: 10%;
   }
 }
 
