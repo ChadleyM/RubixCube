@@ -5,13 +5,11 @@ previousBtn.addEventListener('click', previous);
 nextBtn.addEventListener('click', next);
 
 function previous(tutorialStep) {
-    console.log("Step num: " + window.currentStep + " -> previous");
-    console.log("Test" + !tutorialStep);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     if (window.currentStep > 1) {
         stopVid("frame" + window.currentStep);
-        // const nextBtn = document.getElementById("nextBtn");
         nextBtn.disabled = false;
-        nextBtn.style.backgroundColor = "orange"
+        nextBtn.style.backgroundColor = "orange";
         const oldStep = document.getElementById("step" + window.currentStep);
         if (!isNaN(tutorialStep)) {
             window.currentStep = tutorialStep;
@@ -27,26 +25,21 @@ function previous(tutorialStep) {
     if (window.currentStep == 1) {
         // const previousBtn = document.getElementById("previousBtn");
         previousBtn.disabled = true;
-        previousBtn.style.backgroundColor = "grey"
-        console.log("previousBtn.disable = true")
+        previousBtn.style.backgroundColor = "grey";
     }
 }
 
 function next(tutorialStep) {
-    console.log("maxNumberSteps: " + (window.maxNumberSteps));
-    console.log("Step num: " + window.currentStep + " -> next");
-    console.log("Test with num" + tutorialStep);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     if (window.currentStep < window.maxNumberSteps) {
         stopVid("frame" + window.currentStep);
         const oldStep = document.getElementById("step" + window.currentStep);
-        // const previousBtn = document.getElementById("previousBtn");
         previousBtn.disabled = false;
-        previousBtn.style.backgroundColor = "orange"
+        previousBtn.style.backgroundColor = "orange";
         if (!isNaN(tutorialStep)) {
             window.currentStep = tutorialStep;
         } else {
             window.currentStep++;
-            console.log("normal nav");
         }
         const newStep = document.getElementById("step" + window.currentStep);
         oldStep.style.display = "none";
@@ -54,15 +47,12 @@ function next(tutorialStep) {
     }
 
     if (window.currentStep >= window.maxNumberSteps) {
-        // const nextBtn = document.getElementById("nextBtn");
         nextBtn.disabled = true;
-        nextBtn.style.backgroundColor = "grey"
-        console.log("nextBtn.disable = true")
+        nextBtn.style.backgroundColor = "grey";
     }
 }
 
 async function stopVid(frameRef) {
-    console.log("Stop Vid" + frameRef);
     let youTubeFrame = document.getElementById(frameRef);
     youTubeFrame.src += "&enablejsapi=1";
     youTubeFrame.contentWindow.postMessage(
@@ -76,7 +66,7 @@ async function stopVid(frameRef) {
 }
 
 function jumpToStep(event) {
-    if (event.currentTarget.tutorialStep === 1) {
+    if (window.currentStep === 7) {
         previous(event.currentTarget.tutorialStep);
     }
     else {
@@ -88,7 +78,7 @@ function initialiseLocalNav() {
     let headings = document.getElementsByTagName("h2");    
     let algoNavPanel = document.getElementById("algo-directory");
     for (let index = 0; index < headings.length; index++) {
-        let heading = headings[index].innerHTML
+        let heading = headings[index].innerHTML;
         let liTag = document.createElement("li");
         let anchorTag = document.createElement("a");
         let text = document.createTextNode(heading);
@@ -101,10 +91,10 @@ function initialiseLocalNav() {
     }
 }
 
+initialiseLocalNav();
+
 window.onload = function init() {
     window.currentStep = 1;
     window.maxNumberSteps = document.getElementsByTagName("article").length;
-    initialiseLocalNav();
-    console.log(window.maxNumberSteps);
     previousBtn.disabled = true;
 };

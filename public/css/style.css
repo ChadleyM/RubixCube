@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/yqu6iya.css");
+
 @font-face {
   font-family: 'sikatFont';
   src: url('/assets/fonts/Sikat-8MrrB.ttf')  format('truetype');
@@ -43,11 +45,31 @@
 
 body {
   margin: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: proxima-nova, sans-serif;
+  font: 14px;
 }
 
 h1 {
   text-align: center;
+}
+
+table {
+  width: 100%;
+  max-width: 900px;
+  background-color: #fffeff;
+  border: 5px solid #010101;
+  margin: auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead {
+  border: 5px solid #010101;
+  background-color: #010101;
+}
+
+th {
+  color: #fffeff;
 }
 
 #game {
@@ -74,11 +96,11 @@ canvas {
   padding: 0;
 }
 
-.logo{
+.logo {
   float: left;
   height: 80px;
   width: 80px;
-  }
+}
 
 .navbar ul {
   height: 100%;
@@ -91,7 +113,7 @@ canvas {
   list-style: none;
 }
 
-.navbar ul li a{
+.navbar ul li a {
   display: block;
   text-decoration: none;
   color: white;
@@ -144,10 +166,9 @@ main {
   justify-content: space-between;
 }
 
-
 /* FOR TABLETS: Ipad, galaxy tab etc */
 @media (max-width: 1040px) {
-  nav ul li a{
+  nav ul li a {
     padding: 1.5rem;
     font-size: 1.5vh;
     text-transform: uppercase;
@@ -174,32 +195,31 @@ main {
     display: flex;
   }
 
-  .navbarList li{
+  .navbarList li {
     display: none;
     width: 100%;
     text-align: center;
   }
-  
 
-  .navbarListActive li{
+  .navbarListActive li {
     display: absolute;
     width: 100%;
     text-align: center;
     left: 400px;
   }
 
-  .navContainer{
+  .navContainer {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .navbar ul{
+  .navbar ul {
     width: 100%;
     flex-direction: column;
     text-align: center;
   }
 
-  .navbar ul li a{
+  .navbar ul li a {
     text-align: center;
     padding: 1.5rem;
   }
@@ -235,16 +255,17 @@ main {
   background-color: #FEEF05;
 }
 
-/* Colour scheme
+/* Optional sexy scroll bar
 
-Off-white: #F4EBDC
-Black: #010101
-White: #FFFEFF
-Yellow: #FEEF05
-Blue: #016BB5
-Orange: #F5923D
-Red: #D01242
-Gray: #707070
-Green: #009A66
+::-webkit-scrollbar {
+  width: 20px;
+}
 
+::-webkit-scrollbar-track {
+  background: #db1d5c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: blue;
+}
 */
