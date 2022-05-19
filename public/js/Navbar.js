@@ -13,7 +13,7 @@ const newNavList = document.createElement('ul');
 
 const logo = document.createElement('img');
 logo.type = 'Image';
-logo.src = '/assets/Rubiks Logo.png';
+logo.src = '/assets/Logo.png';
 logo.classList = 'logo';
 logo.alt = 'Rubiks Cube logo';
 

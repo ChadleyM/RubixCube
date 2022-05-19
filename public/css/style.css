@@ -1,3 +1,17 @@
+/*
+
+@font-face {
+    font-family: sikatFont;
+    src: public/assets/fonts/Sikat-8MrrB.ttf;
+}
+  
+h2 {
+    font-family: sikatFont;
+    color: white;
+}
+
+*/
+
 body {
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -123,32 +137,46 @@ canvas {
   }
 }
 
-.rubik-white :hover {
+.rubik-white {
   color: black;
-  background-color: white;
+  background-color: #FFFEFF;
 }
 
-.rubik-red :hover {
+.rubik-red {
   color: black;
-  background-color: red;
+  background-color: #D01242;
 }
 
-.rubik-blue :hover {
+.rubik-blue {
   color: white;
-  background-color: blue;
+  background-color: #016BB5;
 }
 
-.rubik-orange :hover {
+.rubik-orange {
   color: black;
-  background-color: orange;
+  background-color: #F5923D;
 }
 
-.rubik-green :hover {
+.rubik-green {
   color: white;
-  background-color: green;
+  background-color: #009A66;
 }
 
-.rubik-yellow :hover {
+.rubik-yellow {
   color: black;
-  background-color: yellow;
+  background-color: #FEEF05;
 }
+
+/* Colour scheme
+
+Off-white: #F4EBDC
+Black: #010101
+White: #FFFEFF
+Yellow: #FEEF05
+Blue: #016BB5
+Orange: #F5923D
+Red: #D01242
+Gray: #707070
+Green: #009A66
+
+*/
