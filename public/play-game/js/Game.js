@@ -10,12 +10,17 @@ class Game {
 
     this.world = new World(this);
     this.cube = new Cube(this);
-
+  
     this.init();
-    this.cube.init();
+  
+    this.controls = new THREE.OrbitControls(this.world.camera,this.world.renderer.domElement);
+    this.world.update();
+    console.log('hello')
   }
 
-  init() {}
+  init() {
+    this.cube.init();
+  }
 
   game(show) {}
   /*showControls() {
@@ -30,6 +35,7 @@ class Game {
 
 let startGame = () => {
   let game = new Game();
+  game.world.animate();
 };
 
 startGame();

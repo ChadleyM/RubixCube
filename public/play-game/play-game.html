@@ -37,25 +37,42 @@
           </ul>
         </nav>
       </header>
-    <main class="center">
-        <section>
-            <h1>Here the game will be displayed</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla, magna eget molestie porttitor, erat turpis bibendum odio, at pretium lacus diam id urna. Fusce laoreet mi vel ex vehicula pretium. Proin aliquet mauris erat, et tincidunt libero sodales a. Praesent mollis nisl non magna lacinia iaculis. Morbi eu euismod sem. Vivamus consectetur, ante et gravida interdum, tortor purus interdum risus, sed rutrum mi enim quis lorem. Ut laoreet, sapien sed faucibus finibus, purus metus tincidunt ipsum, sit amet molestie diam ligula interdum felis. Etiam id leo a mi malesuada convallis. 
-            </p>
-            <p>
-                Aenean scelerisque risus ut hendrerit semper. Nullam ut egestas neque. In sed facilisis massa, in accumsan turpis. Vivamus id sapien a ipsum maximus varius sed nec justo. Mauris congue varius congue. Aenean luctus consequat eros, et consectetur lectus interdum vel. Duis feugiat efficitur ullamcorper. Sed non imperdiet risus, ut posuere nunc. Suspendisse non eros a ex pulvinar tempor non nec ligula. 
-            </p>
-            <p>
-                Etiam molestie nulla non elit porta suscipit. Sed id erat nec eros accumsan egestas. Maecenas sed augue quis nibh eleifend condimentum et at velit. Quisque non egestas elit. Fusce feugiat viverra est ut ultrices. Aliquam at semper tellus, vitae convallis sem. Suspendisse potenti. Pellentesque quis cursus diam, a cursus orci. In consequat lorem id magna cursus molestie eu sit amet leo. Suspendisse felis purus, tincidunt at nunc vehicula, porta fermentum quam. Praesent placerat, tellus eu dignissim rhoncus, tellus tellus congue libero, a posuere sem ante non odio. Vivamus dapibus laoreet rhoncus. Aliquam erat volutpat. 
-            </p>
-        </section>
-    </main>
     <container>
         <h1>Rubix Cube!</h1>
         <!--3D canvas-->
+              <!--3D canvas-->
+      <div id="game"></div>
+      <menu id="btn-group-cube-options">
+        <button>Shuffle</button>
+        <button>Solve</button>
+      </menu>
+      <!--Controls-->
+      <div class ="cube-controls" id = "controlsPopup">
+        <title>Controls</title>
+        <br/>
+        <section >
+          <button onclick="hideControls()" class="close-controls">❌</button>
+          <br>
+          <button class = "btn-cube-control">U</button>
+          <button class = "btn-cube-control">L</button>
+          <button class = "btn-cube-control">F</button>
+          <br/>
+          <button class = "btn-cube-control">D</button>
+          <button class = "btn-cube-control">R</button>
+          <button class = "btn-cube-control">B</button>
+          <br/>
+          <button class = "btn-cube-control">X</button>
+          <button class = "btn-cube-control">Y</button>
+          <button class = "btn-cube-control">Z</button>
+          <br/>
+          <button class ='btn-inverse'>Inverse</button>
+      </section>
+      </div>
+        
         <section id="game"></section>
-    </container>
+      </container>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+    <script src="../lib/OrbitControls.js"></script>
     <script src="./dist/bundle.js" type="text/javascript"></script>
   </body>
 </html>
