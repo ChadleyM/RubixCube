@@ -30,39 +30,62 @@ canvas {
   
 .moves {
     width: 25%;
-    height: 50%;
-}
+    height: 80%;
+    display: flex;
+    margin-top: 25%;
+    flex-direction: column;
+  }
 
 .movesHeader {
-  width: 100%;
-  height: 10%;
+  width: 80%;
+  height: 30%;
   display: flex;
 }
 
 .headerText {
     /* display: inline-block; */
-    width: 90%;   
+    width: 80%;   
     height: 100%; 
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 0;
+    margin-bottom: 0;
     background-color: #000;
     color: #FFF;
-    font-size: 15px;
-    vertical-align: middle;
+    font-size: 20px;
+    text-align: center;
+    padding-right: 10%;
 }
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
     /* display: inline-block; */
-    width: 10%;
-    height: 100%;
-    background-color: #FFF;
+    width: 20%;
+    background-color: #000;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    /* background-image: url('../assets/down-arrow.png');
+    background-repeat: no-repeat; */
     border: none;
     /* vertical-align: middle; */
   }
 
-  
 .movesContent {
-  width: 100%;
-  height: 90%; 
+  width: 80%;
+  height: 70%; 
+  background-color: #FFF;
+}
+
+.moveList {
+  list-style-type:none;
+}
+
+.move {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
 }
   
   /* Style the collapsible content. Note: hidden by default
