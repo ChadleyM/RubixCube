@@ -1,48 +1,31 @@
 <!DOCTYPE html>
 <!--Going to need to add a header for semantics. Doesnt seem like it gets automatically added-->
 <html lang="en">
-  <head>
-    <title>Leaderboard</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/leaderboard-styles.css">
-    <script type="module" src="../js/Navbar.js" async></script>
-    <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body style="background-color: #FBBB62;">
-    <!--content-->
-    <header class="navContainer" id="navLocation">
-    </header>
-    <main class="center">
-        <section>
-            <h1>Here is the leaderboard</h1>
-            <table>
-              <tr>
-                  <th>Username</th>
-                  <th>Best Score</th>
-                  <th>Best Time</th>
-                  <th>Least Moves Made</th>
-              </tr>
-              <tr>
-                  <td>RubikSwagger1903</td>
-                  <td>5000</td>
-                  <td>05:43</td>
-                  <td>18</td>
-              </tr>
-              <tr>
-                  <td>CubeBossUwU</td>
-                  <td>4200</td>
-                  <td>04:20</td>
-                  <td>75</td>
-              </tr>
-              <tr>
-                  <td>username</td>
-                  <td>100000</td>
-                  <td>00:00</td>
-                  <td>1</td>
-              </tr>
-          </table>
-        </section>
-    </main>
-  </body>
+<head>
+  <title>Leaderboard</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./css/leaderboard-styles.css" />
+  <script type="module" src="../js/Navbar.js" async></script>
+  <script type="module" src="./js/leaderboard.js" async></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body style="background-color: #fbbb62">
+  <!--content-->
+  <header class="navContainer" id="navLocation"></header>
+  <main class="center">
+    <section>
+      <h1>Here is the leaderboard</h1>
+      <table id="leaderboard-table">
+        <tr>
+          <th>rank</th>
+          <th>name</th>
+          <th>time</th>
+        </tr>
+      </table>
+    </section>
+  </main>
+</body>
+
 </html>
