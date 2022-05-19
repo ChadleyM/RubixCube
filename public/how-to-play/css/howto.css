@@ -54,3 +54,67 @@
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
+/* figure {
+    border: 1px #cccccc dotted;
+    padding: 4px;
+    margin: auto;
+    width: 30vw;
+} */
+/* 
+#figLeft {
+    float: left;
+}
+
+#figRight {
+    float: right;
+} */
+  
+/* figcaption {
+    background-color: inherit;
+    color: inherit;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+} */
+
+.video-frame {
+    width: 56vw;
+    height: 32vh;
+}
+
+.cube-image {
+    max-width: 240px;
+    width: 45vw;
+    height: auto;
+}
+
+.algorithm-image {
+    max-width: 410px;
+    width: 65vw;
+    height: auto;
+}
+
+.cross-image {
+    max-width: 720px;
+    width: 75vw;
+    height: auto;
+}
+
+#algo5 {
+    max-width: 720px;
+    width: 75vw;
+    height: auto;
+}
+
+#algo6 {
+    max-width: 420px;
+    width: 65vw;
+    height: auto;
+}
+
+#algo7 {
+    max-width: 720px;
+    width: 75vw;
+    height: auto;
+}
