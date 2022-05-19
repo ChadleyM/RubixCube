@@ -1,3 +1,4 @@
+
 const path = require('path');
 
 module.exports = {
@@ -6,7 +7,7 @@ module.exports = {
     output: {
         filename: "bundle.js",
         path: path.resolve(__dirname, "public/play-game/dist"),
-        publicPath: "/public/play-game/dist",
+        publicPath: '/play-game/dist/'
     },
     module: {
         rules: [
