@@ -1,0 +1,146 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ede3d3;
+}
+
+h1 {
+    font-family: 'SIKAT', sans-serif;
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.first-section {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+    padding-top: 4.3rem;
+    margin-right: 20px;
+}
+
+.about-heading {
+    font-size: 72px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(to right,rgb(246, 124, 97)2%,#ede3d3 2%);
+    margin-left: 0em;
+    padding: 20px;
+}
+
+.cite {
+    margin-left:auto;
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 80px;
+    width: 40px;
+}
+
+.cube-image {
+    border-radius: 20%;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    padding-top: 4.3rem;
+}
+
+.second-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.5rem;
+    padding: 0 0.5rem 0 0.5rem;
+    height: 100vh;
+}
+
+.up-arrow {
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 20px;
+    right: 20px;
+    height: 80px;
+    width: 40px;
+}
+
+.about-us {
+    font-size: 1.7rem;
+    width:80%;
+}
+
+@media (max-width: 950px) { 
+    .first-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 90%;
+        margin: 0;
+    }
+
+    .about-heading {
+        font-size: 4.5rem;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .down-arrow {
+        display: none;
+    }
+
+    .up-arrow {
+        display: none;
+    }
+
+    .quote {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background: linear-gradient(to right,rgb(246, 124, 97)2%,#ede3d3 2%);
+        margin-left: 0em;
+        padding: 1.25rem;
+    }
+
+    .second-section {
+        height: auto;
+    }
+
+    .content {
+        width: 100%;
+        padding-top: 4.3rem;
+        margin-right: 0;
+    }
+}
