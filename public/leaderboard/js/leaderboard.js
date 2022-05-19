@@ -14,7 +14,7 @@ function getLeaderboard() {
 function constructLeaderboard(data) {
     const leaderboardTable = document.getElementById("leaderboard-table");
 
-    data.sort(function(first, second) {
+    data.sort(function (first, second) {
         let minSec1 = first.bestTime.split(":")
         let minSec2 = second.bestTime.split(":")
         let firstTime = parseInt(minSec1[0]) + parseInt(minSec1[1]) / 60
@@ -23,7 +23,7 @@ function constructLeaderboard(data) {
     });
 
     let rank = 1;
-    for (const entry of data) {        
+    for (const entry of data) {
         let tr = document.createElement("tr");
         let movesTN = document.createTextNode(rank);
         let td = document.createElement("td");
