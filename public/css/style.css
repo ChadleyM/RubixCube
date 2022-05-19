@@ -1,21 +1,20 @@
 @import url("https://use.typekit.net/yqu6iya.css");
 
 @font-face {
-  font-family: 'sikatFont';
-  src: url('/assets/fonts/Sikat-8MrrB.ttf')  format('truetype');
+  font-family: "sikatFont";
+  src: url("/assets/fonts/Sikat-8MrrB.ttf") format("truetype");
 }
 
 :root {
-
-  --OffWhite: #F4EBDC;
+  --OffWhite: #f4ebdc;
   --Black: #010101;
-  --White: #FFFEFF;
-  --Yellow: #FEEF05;
-  --Blue: #016BB5;
-  --Orange: #F5923D;
-  --Red: #D01242;
+  --White: #fffeff;
+  --Yellow: #feef05;
+  --Blue: #016bb5;
+  --Orange: #f5923d;
+  --Red: #d01242;
   --Gray: #707070;
-  --Green: #009A66;
+  --Green: #009a66;
 
   /* To call: color: var(var name);
           eg: color: var(--OffWhite) */
@@ -27,7 +26,7 @@
   padding: 0;
   justify-content: left;
   margin: 0;
-  font-family: 'sikatFont';
+  font-family: "sikatFont";
   color: black;
   font-size: 6vh;
   width: 45%;
@@ -49,7 +48,6 @@
 body {
   margin: 0;
   font-family: proxima-nova, sans-serif;
-  font: 14px;
 }
 
 h1 {
@@ -91,24 +89,31 @@ canvas {
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(57, 138, 141);
+  background-color: var(--OffWhite);
 }
 
 .navbar {
+  display: flex;
   width: 100%;
-  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .logo {
   float: left;
-  height: 80px;
-  width: 80px;
+  margin-top: 15px;
+  width: 150px;
 }
 
 .navbar ul {
   height: 100%;
   display: flex;
-  margin: 0;
+  justify-content: center;
+  margin-left: 25%;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
@@ -119,27 +124,23 @@ canvas {
 .navbar ul li a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: var(--Black);
+  transition: 0.3;
+  font-weight: 600;
   padding: 1.75rem;
-  font-size: 1.75vh;
-  text-transform: uppercase;
 }
 
 main {
   padding: 10%;
-  display: flex;
   text-align: center;
   height: 100%;
   margin: auto;
 }
 
 .menuBtn {
-  position: absolute;
   height: 30px;
   width: 30px;
   padding: auto;
-  right: 15px;
-  top: 45px;
   display: none;
   float: right;
   justify-content: space-between;
@@ -147,17 +148,25 @@ main {
 
 /* FOR TABLETS: Ipad, galaxy tab etc */
 @media (max-width: 1040px) {
-  nav ul li a {
-    padding: 1.5rem;
-    font-size: 1.5vh;
-    text-transform: uppercase;
+  .navbar ul{
+    justify-content: right;
+  }
+  .navbarList ul li a {
+    padding: 1rem;
+  }
+  .logo {
+    content: url("../assets/Logo-small.png");
+    float: left;
+    margin: 15px 0px 15px 0px;
+    width: 50px;
   }
 }
 
 /* FOR MOBILE DEVICES: Android, iPhone, etc */
 @media (max-width: 810px) {
   .menuBtn {
-    display: flex;
+    display: block;
+    margin-top: 20px;
   }
 
   .navbarList li {
@@ -165,7 +174,10 @@ main {
     width: 100%;
     text-align: center;
   }
+  .navbarListActive{
+    margin-top: 50px;
 
+  }
   .navbarListActive li {
     display: absolute;
     width: 100%;
@@ -173,13 +185,14 @@ main {
     left: 400px;
   }
 
-  .navContainer {
+  /* .navContainer {
     flex-direction: column;
     align-items: flex-start;
-  }
+  } */
 
   .navbar ul {
     width: 100%;
+    margin: 0;
     flex-direction: column;
     text-align: center;
   }
@@ -192,44 +205,49 @@ main {
 
 .rubik-white {
   color: black;
-  background-color: #FFFEFF;
+  background-color: #fffeff;
 }
 
 .rubik-red {
   color: black;
-  background-color: #D01242;
+  background-color: #d01242;
 }
 
 .rubik-blue {
   color: white;
-  background-color: #016BB5;
+  background-color: #016bb5;
 }
 
 .rubik-orange {
   color: black;
-  background-color: #F5923D;
+  background-color: #f5923d;
 }
 
 .rubik-green {
   color: white;
-  background-color: #009A66;
+  background-color: #009a66;
 }
 
 .rubik-yellow {
   color: black;
-  background-color: #FEEF05;
+  background-color: #feef05;
+}
+#Play:hover{
+  color: var(--Red);
 }
 
-Off-white: #F4EBDC
-Black: #010101
-White: #FFFEFF
-Yellow: #FEEF05
-Blue: #016BB5
-Orange: #F5923D
-Red: #D01242
-Gray: #707070
-Green: #009A66
-
+#Learn:hover{
+  color: var(--Blue);
+}
+#Time:hover{
+  color: var(--Yellow);
+}
+#Score:hover{
+  color: var(--Orange);
+}
+#About:hover{
+  color: var(--Green);
+}
 /* Optional sexy scroll bar
 
 ::-webkit-scrollbar {

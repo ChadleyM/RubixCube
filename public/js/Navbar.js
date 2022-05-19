@@ -1,10 +1,9 @@
 var navItems = [
-    {item: 'Rubix Cube Home', href: '/'},
-    {item: 'Play Game', href: '/play-game/play-game.html'},
-    {item: 'How to Play', href: '/how-to-play/how-to-play.html'},
-    {item: 'Leaderboard', href: '/leaderboard/leaderboard.html'},
+    {item: 'Play', href: '/play-game/play-game.html'},
+    {item: 'Learn', href: '/how-to-play/how-to-play.html'},
+    {item: 'Time', href: '/algorithms/algorithms.html'},
+    {item: 'Score', href: '/leaderboard/leaderboard.html'},
     {item: 'About', href: '/about/about.html'},
-    {item: 'Algorithms', href: '/algorithms/algorithms.html'},
 ]
 
 const newNavBar = document.createElement('nav');
@@ -25,25 +24,23 @@ mobileMenu.classList = "menuBtn";
 mobileMenu.alt="Hamburger menu icon";
 
 function CreateNavbar() {
-    console.log('Creating Navbar')
-    let navLength = navItems.length;
+    console.log('Creating Navbar');
 
     let newNavItem = document.createElement('li');
     let newNavItemLink = document.createElement('a');
 
-    newNavItemLink.href = navItems[0].href;
-    newNavItemLink.appendChild(logo);
+    newNavItemLink.href = '/';
+    newNavItemLink.appendChild(logo);;
     newNavBar.appendChild(newNavItemLink);
-    //newNavItem.appendChild(newNavItemLink);
-    //newNavList.appendChild(newNavItem);
 
-    for(var i=1; i<navLength; i++)
+    for(const navItem of navItems)
     {
         newNavItem = document.createElement('li');
         newNavItemLink = document.createElement('a');
         
-        newNavItemLink.href = navItems[i].href;
-        newNavItemLink.innerHTML = navItems[i].item;
+        newNavItemLink.href = navItem.href;
+        newNavItemLink.setAttribute('id', navItem.item)
+        newNavItemLink.innerHTML = navItem.item;
 
         newNavItem.appendChild(newNavItemLink);
         newNavList.appendChild(newNavItem);
@@ -54,17 +51,17 @@ function CreateNavbar() {
     newNavBar.appendChild(newNavList);
     newNavBar.appendChild(mobileMenu);
     navLocation.appendChild(newNavBar);
+
 }
 
 CreateNavbar();
 
 
-const mobileMenuButton = document.getElementById('MenuButton');
+const mobileMenuButton = document.querySelector('#MenuButton');
 
 mobileMenuButton.addEventListener('click', toggleMobileMenu)
 
 function toggleMobileMenu() {
-    console.log('toggling menu');
 
     if(newNavList.classList == 'navbarList')
     {
