@@ -22,7 +22,6 @@
 
 .homepage {
   text-align: left;
-  display: flex;
   padding: 0;
   justify-content: left;
   margin: 0;
@@ -30,6 +29,91 @@
   color: black;
   font-size: 4vw;
 }
+
+.title-graphic-wrapper {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 0.3fr;
+  grid-gap: 0.2rem;
+  grid-template-areas:
+  "text img"
+  "text img"
+  "btn img";
+}
+
+.title-graphic-button {
+  grid-area: btn;
+  width: auto;
+}
+.title-graphic-img {
+  grid-area: img;
+  width: 100%;
+  max-width: 750px;
+  margin-left: auto ;
+  }
+.title-graphic-text {
+  grid-area: text;
+  width: 100%;
+  max-width: 750px;
+}
+
+ #threeDee::before, #threeDee::after {
+	 position: absolute;
+	 content: '';
+	 transition: all 0.5s;
+	 -webkit-transition: all 0.5s;
+}
+ #threeDee {
+	 display: inline-block;
+	 padding: 20px 40px;
+   border: 5px var(--Black) solid;
+	 color: var(--White);
+	 position: relative;
+   width: 30%;
+   height: 7rem;
+	 transform: translate(0%, 0%);
+	 -webkit-transform: translate(0%, 0%);
+	 vertical-align: middle;
+	 text-decoration: none;
+   font-size: xx-large;
+	 transition: all 0.5s;
+	 -webkit-transition: all 0.5s;
+	 background-color: var(--White);
+}
+ #threeDee::before {
+	 bottom: -20px;
+	 height: 15px;
+	 width: 104%;
+	 left: 3px;
+	 transform: skewX(45deg);
+	 -webkit-transform: skewX(45deg);
+	 background-color: var(--Black);
+}
+ #threeDee::after {
+	 right: -20px;
+	 height: 111%;
+	 width: 15px;
+	 bottom: -14px;
+	 transform: skewY(45deg);
+	 -webkit-transform: skewY(45deg);
+	 background-color: var(--Black);
+}
+ #threeDee:active {
+	 margin-left: 10px;
+	 margin-top: 10px;
+}
+ #threeDee:active::before {
+	 bottom: -5px;
+	 height: 5px;
+	 left: 3px;
+}
+ #threeDee:active::after {
+	 right: -5px;
+	 width: 5px;
+	 bottom: -3px;
+}
+
 
 .homepageLogo {
   height: auto;
@@ -53,6 +137,14 @@ body {
   font-family: proxima-nova, sans-serif;
 }
 
+#threeDee span{
+  font-family: proxima-nova, sans-serif;
+  font-size: xx-large;
+  font-weight: 600;
+  color: #010101;
+  margin: 0 auto;
+  letter-spacing: 4px;
+}
 h1 {
   text-align: center;
 }
@@ -99,21 +191,21 @@ canvas {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .logo {
   float: left;
   margin-top: 15px;
-  width: 150px;
+  width: 200px;
 }
 
 .navbar ul {
   height: 100%;
   display: flex;
   justify-content: center;
-  margin-left: 25%;
+  margin-left: 20%;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -129,11 +221,12 @@ canvas {
   color: var(--Black);
   transition: 0.3;
   font-weight: 600;
+  font-size: x-large;
   padding: 1.75rem;
 }
 
 main {
-  padding: 6%;
+  padding: 3% 8% 3% 8%;
   text-align: center;
   height: 100%;
   margin: auto;
@@ -155,12 +248,12 @@ main {
 
 .playGameButton a {
   justify-content: center;
-  font-family: 'sikatFont';
+  font-family: "sikatFont";
   text-decoration: none;
-  font-size:3em;
+  font-size: 3em;
 }
 
-.menuBtn{
+.menuBtn {
   height: 30px;
   width: 30px;
   padding: auto;
@@ -171,7 +264,18 @@ main {
 
 /* FOR TABLETS: Ipad, galaxy tab etc */
 @media (max-width: 1040px) {
-  .navbar ul{
+  #threeDee{
+    width: 100%;
+  }
+  .title-graphic-wrapper{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.1fr;
+    grid-template-areas:
+      "text"
+      "img"
+      "btn";
+  }
+  .navbar ul {
     justify-content: right;
   }
   .navbarList ul li a {
@@ -180,8 +284,8 @@ main {
   .logo {
     content: url("../assets/Logo-small.png");
     float: left;
-    margin: 15px 0px 15px 0px;
-    width: 50px;
+    margin: 20px 0px 20px 0px;
+    width: 60px;
   }
 
   .homeContent {
@@ -190,9 +294,8 @@ main {
 
   .homepage {
     padding-top: 10%;
-  justify-content: center;  
+    justify-content: center;
   }
-
 
   .homepageLogo {
     padding-top: 10%;
@@ -212,9 +315,8 @@ main {
     width: 100%;
     text-align: center;
   }
-  .navbarListActive{
+  .navbarListActive {
     margin-top: 50px;
-
   }
   .navbarListActive li {
     display: absolute;
@@ -271,23 +373,23 @@ main {
   background-color: #feef05;
 }
 
-#Play:hover{
+#Play:hover {
   color: var(--Red);
 }
 
-#Learn:hover{
+#Learn:hover {
   color: var(--Blue);
 }
 
-#Time:hover{
+#Time:hover {
   color: var(--Yellow);
 }
 
-#Score:hover{
+#Score:hover {
   color: var(--Orange);
 }
 
-#About:hover{
+#About:hover {
   color: var(--Green);
 }
 
