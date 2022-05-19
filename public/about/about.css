@@ -1,0 +1,75 @@
+@import url('../css/style.css');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.landing-section {
+    display: flex;
+    margin-top: 60px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 30%;
+    margin-left: 80px;
+    margin-right: 20px;
+}
+
+.about-heading {
+    font-size: 72px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: 24px;
+    background: linear-gradient(to right,rgb(246, 124, 97)1%,#ede3d3 2%) ;
+    border-radius: 10px;
+    margin-left: 0em;
+    padding: 10px;
+}
+
+.about-button {
+    height: 80px;
+    width: 40px;
+    margin-top: auto;
+}
+
+.about-image {
+    margin: auto;
+    margin-right: 80px;
+    border-radius: 20%;
+}
+
+b {
+    font-size: 84px;
+}
+sup {
+    font-size: 50px;
+    color:rgb(152, 0, 223)
+}
+
+b:nth-child(2) {
+    color: green;
+}
+b:nth-child(3) {
+    color: red;
+}
+b:nth-child(4) {
+    color: rgb(223, 223, 0);
+}
+b:nth-child(5) {
+    color: blue;
+}
+b:nth-child(6) {
+    color: orange;
+}
+b:nth-child(7) {
+    color: rgb(172, 172, 172);
+}
