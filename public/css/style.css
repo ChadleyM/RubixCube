@@ -128,7 +128,7 @@ canvas {
 }
 
 main {
-  padding: 8%;
+  padding: 3% 8% 3% 8%;
   text-align: center;
   height: 100%;
   margin: auto;
