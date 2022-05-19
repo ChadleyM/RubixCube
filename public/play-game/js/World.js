@@ -18,24 +18,30 @@ class World {
     this.stage = { width: 2, height: 3 };
 
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
-
+    
     this.renderer.setClearColor("#000000");
 
     this.renderer.setSize(
-      this.container.offsetWidth,
-      this.container.offsetHeight
+      window.innerWidth,
+      window.innerHeight
     );
-
     this.createLights();
     this.container.appendChild(this.renderer.domElement);
-
     this.update();
-
+    this.resize();
     window.addEventListener("resize", () => this.resize(), false);
+    window.addEventListener("mousemove",()=> this.update(),false);
+
   }
 
   update() {
+    //requestAnimationFrame(this.update());
     this.renderer.render(this.scene, this.camera);
+  }
+
+  animate() {
+    requestAnimationFrame(this.animate);
+    this.update()
   }
 
   resize() {
