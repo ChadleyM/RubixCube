@@ -1,10 +1,8 @@
-
 window.onload = function init() {
     getLeaderboard()
 };
 
 function getLeaderboard() {
-    console.log("PING!!!!");
     let xhr = new XMLHttpRequest();
     xhr.open("POST", "https://mudla6g3ejcwhoergdmeycrp4a0gtovs.lambda-url.us-east-1.on.aws/");
     xhr.onload = () => {
@@ -17,22 +15,26 @@ function constructLeaderboard(data) {
     const leaderboardTable = document.getElementById("leaderboard-table");
 
     data.sort(function(first, second) {
-        return second.score - first.score;
+        let minSec1 = first.bestTime.split(":")
+        let minSec2 = second.bestTime.split(":")
+        let firstTime = parseInt(minSec1[0]) + parseInt(minSec1[1]) / 60
+        let secondTime = parseInt(minSec2[0]) + parseInt(minSec2[1]) / 60
+        return firstTime - secondTime;
     });
 
-    for (const entry of data) {
-        console.log("Data " + entry);
-        const tr = document.createElement("tr");
+    let rank = 1;
+    for (const entry of data) {        
+        let tr = document.createElement("tr");
+        let movesTN = document.createTextNode(rank);
+        let td = document.createElement("td");
+        td.appendChild(movesTN)
+        tr.appendChild(td)
+        leaderboardTable.appendChild(tr)
+
         let userName = entry["user"]
         let userNameTN = document.createTextNode(userName);
-        let td = document.createElement("td");
-        td.appendChild(userNameTN)
-        tr.appendChild(td)
-
-        let score = entry["score"]
-        let scoreTN = document.createTextNode(score);
         td = document.createElement("td");
-        td.appendChild(scoreTN)
+        td.appendChild(userNameTN)
         tr.appendChild(td)
 
         let bestTime = entry["bestTime"]
@@ -40,12 +42,6 @@ function constructLeaderboard(data) {
         td = document.createElement("td");
         td.appendChild(bestTimeTN)
         tr.appendChild(td)
-        
-        let moves = entry["moves"]
-        let movesTN = document.createTextNode(moves);
-        td = document.createElement("td");
-        td.appendChild(movesTN)
-        tr.appendChild(td)
-        leaderboardTable.appendChild(tr)
+        rank++;
     }
 }
