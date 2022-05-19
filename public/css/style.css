@@ -200,8 +200,6 @@ main {
   background-color: #FEEF05;
 }
 
-/* Colour scheme
-
 Off-white: #F4EBDC
 Black: #010101
 White: #FFFEFF
@@ -212,4 +210,17 @@ Red: #D01242
 Gray: #707070
 Green: #009A66
 
+/* Optional sexy scroll bar
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #db1d5c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: blue;
+}
 */
