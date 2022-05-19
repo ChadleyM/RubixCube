@@ -117,14 +117,19 @@
 
 .homepageLogo {
   height: auto;
-  width: 35vw;
+  width:25vw;
   padding-top: 0%;
+  padding-bottom: 5%;
+  padding-left: 25%;
 }
 
 .subpage {
   justify-content: center;
   font-size: 2vw;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.homeContent {
+  display: flex;
 }
 
 body {
@@ -294,6 +299,7 @@ main {
 
   .homepageLogo {
     padding-top: 10%;
+    padding-left: 0;
   }
 }
 
