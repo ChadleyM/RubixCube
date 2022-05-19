@@ -86,3 +86,18 @@ text-decoration: none;
   background-color: yellow;
 }
 
+/*
+Optional sexy scroll bar
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #db1d5c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: blue;
+}
+*/
