@@ -4,28 +4,6 @@ const toggleSidebarButton = document.getElementById("sidebarButton");
 const sidebar = document.getElementById("sidebar");
 
 toggleSidebarButton.addEventListener('click', toggleSidebar);
-<<<<<<< Updated upstream
-toggleSidebarOpen.addEventListener('click',openSidebar);
-
-
-//Change into one function --> check classlist and then toggle depending
-function closeSidebar() {
-    console.log('Closing sidebar');
-    let tutorialNavPanel = document.getElementById("algo-directory").children;
-    for (let index = 0; index < tutorialNavPanel.length; index++) {
-        tutorialNavPanel[index].style.display = "block";
-    }
-}
-
-function openSidebar() {
-    console.log('Opening Sidebar');
-    let tutorialNavPanel = document.getElementById("algo-directory").children;
-    for (let index = 0; index < tutorialNavPanel.length; index++) {
-        tutorialNavPanel[index].style.display = "none";
-    }
-}
-=======
->>>>>>> Stashed changes
 
 function toggleSidebar() {
     if(sidebar.classList == "sidebar") {
