@@ -14,8 +14,8 @@ container{
 }
   
 canvas {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: Auto;
     background-color: var(--OffWhite);
 }
 
@@ -194,3 +194,38 @@ canvas {
     background-color: var(--Yellow);
   }
   
+.cube-controls{
+  width: auto;
+  height: auto;
+}
+.btn-cube-control{
+  width: 30%;
+  margin-top: 5px;
+  height: 40px;
+  font-size: x-large;
+}
+.btn-cube-control::after{
+  background-color: whitesmoke;
+}
+.btn-inverse{
+  margin: 10%;
+  width: 60%;
+  height: 40px;
+  margin: 5px;
+  font-size: x-large;
+}
+#blue{
+  background-color: #016bb5
+}
+#red{
+  background-color: #D01242
+}
+#green{
+  background-color: #009A66
+}
+#yellow{
+  background-color: #FEEF05
+}
+#orange{
+  background-color: #F5923D;
+}
