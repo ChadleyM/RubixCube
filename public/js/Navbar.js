@@ -24,7 +24,6 @@ mobileMenu.classList = "menuBtn";
 mobileMenu.alt="Hamburger menu icon";
 
 function CreateNavbar() {
-    console.log('Creating Navbar');
 
     let newNavItem = document.createElement('li');
     let newNavItemLink = document.createElement('a');

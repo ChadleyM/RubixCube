@@ -5,37 +5,48 @@ class World {
 
     this.container = this.game.dom.game;
 
-    this.scene = new THREE.Scene();
+    this.scene = new THREE.Scene(); 
+    let width = this.container.offsetWidth;
+    let height =this.container.offsetHeight
+
 
     this.camera = new THREE.PerspectiveCamera(
-      75,
-      this.container.offsetWidth / this.container.offsetHeight,
+      55,
+      this.container.offsetWidth -100 / this.container.offsetHeight,
       0.1,
       1000
     );
-    this.camera.position.z = 3;
+  //  this.camera = new THREE.OrthographicCamera( -width/1000, width/1000, height/1000, -height/1000, 1, 100);
+    this.camera.position.z =7;
 
     this.stage = { width: 2, height: 3 };
 
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
-
-    this.renderer.setClearColor("#000000");
+    
+    this.renderer.setClearColor("#F4EBDC");
+    // this.renderer.setClearColor("#000000");
 
     this.renderer.setSize(
-      this.container.offsetWidth,
-      this.container.offsetHeight
+      window.innerWidth,
+      window.innerHeight
     );
-
     this.createLights();
     this.container.appendChild(this.renderer.domElement);
-
     this.update();
-
+    this.resize();
     window.addEventListener("resize", () => this.resize(), false);
+    window.addEventListener("mousemove",()=> this.update(),false);
+
   }
 
   update() {
+    //requestAnimationFrame(this.update());
     this.renderer.render(this.scene, this.camera);
+  }
+
+  animate() {
+    requestAnimationFrame(this.animate);
+    this.update()
   }
 
   resize() {
