@@ -201,23 +201,27 @@ canvas {
 .btn-cube-control{
   width: 30%;
   margin-top: 5px;
-  height: 60px;
+  height: 40px;
   font-size: x-large;
 }
-.btn-cube-control::after{
+.btn-cube-control:hover{
+  width: 28%;
   background-color: whitesmoke;
 }
 .btn-inverse{
   margin: 10%;
   width: 60%;
-  height: 50px;
+  height: 40px;
   margin: 5px;
   font-size: x-large;
+}
+.btn-inverse:hover{
+  width: 55%;
 }
 #blue{
   background-color: #016bb5
 }
-#blue:hover{
+#blue{
   background-color: #016bb5
 }
 #red{
