@@ -3,32 +3,55 @@
 <html lang="en">
   <head>
     <title>Play Game</title>
-    <link rel="icon" href="../assets/Logo-small.png">
+    <link rel="icon" href="../assets/Logo-small.png" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/play-game.css" />
+    <script
+      src="https://kit.fontawesome.com/b7ecd662a4.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="../js/Navbar.js" async></script>
     <!--Put local css stylesheet here if necessary-->
-    <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body style="background-color: #D26466;">
+  <body>
     <!--content-->
-    <header class="navContainer" id="navLocation">
-    </header>
-    <main class="center">
-        <section>
-            <h1>Here the game will be displayed</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla, magna eget molestie porttitor, erat turpis bibendum odio, at pretium lacus diam id urna. Fusce laoreet mi vel ex vehicula pretium. Proin aliquet mauris erat, et tincidunt libero sodales a. Praesent mollis nisl non magna lacinia iaculis. Morbi eu euismod sem. Vivamus consectetur, ante et gravida interdum, tortor purus interdum risus, sed rutrum mi enim quis lorem. Ut laoreet, sapien sed faucibus finibus, purus metus tincidunt ipsum, sit amet molestie diam ligula interdum felis. Etiam id leo a mi malesuada convallis. 
-            </p>
-            <p>
-                Aenean scelerisque risus ut hendrerit semper. Nullam ut egestas neque. In sed facilisis massa, in accumsan turpis. Vivamus id sapien a ipsum maximus varius sed nec justo. Mauris congue varius congue. Aenean luctus consequat eros, et consectetur lectus interdum vel. Duis feugiat efficitur ullamcorper. Sed non imperdiet risus, ut posuere nunc. Suspendisse non eros a ex pulvinar tempor non nec ligula. 
-            </p>
-            <p>
-                Etiam molestie nulla non elit porta suscipit. Sed id erat nec eros accumsan egestas. Maecenas sed augue quis nibh eleifend condimentum et at velit. Quisque non egestas elit. Fusce feugiat viverra est ut ultrices. Aliquam at semper tellus, vitae convallis sem. Suspendisse potenti. Pellentesque quis cursus diam, a cursus orci. In consequat lorem id magna cursus molestie eu sit amet leo. Suspendisse felis purus, tincidunt at nunc vehicula, porta fermentum quam. Praesent placerat, tellus eu dignissim rhoncus, tellus tellus congue libero, a posuere sem ante non odio. Vivamus dapibus laoreet rhoncus. Aliquam erat volutpat. 
-            </p>
+    <header class="navContainer" id="navLocation"></header>
+
+    <main class="grid-wrapper">
+      <section class="moves">
+        <button class="box-header">
+          <i class="fa-solid fa-angle-down fa-xl"></i>
+          <h1>moves</h1>
+        </button>
+        <section class="box">
+            <p></p>
         </section>
+      </section>
+      <section id="game" class="game-container"></section>
+      <section class="controls">
+        <button class="box-header">
+          <i class="fa-solid fa-angle-down fa-xl"></i>
+          <h1>controls</h1>
+        </button>
+        <section class="box">
+            <p></p>
+        </section>
+      </section>
+      <section class="game-buttons">
+        <button class="threeDee">
+          <span>SOLVE</span>
+        </button>
+        <button class="threeDee">
+          <span>SHUFFLE</span>
+        </button>
+      </section>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+    <script src="../lib/OrbitControls.js"></script>
     <script src="./dist/bundle.js" type="text/javascript"></script>
+    <script src="./js/UI.js" type="text/javascript"></script>
   </body>
 </html>

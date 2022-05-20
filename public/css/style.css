@@ -58,13 +58,13 @@
   max-width: 750px;
 }
 
- #threeDee::before, #threeDee::after {
+ .threeDee::before, .threeDee::after {
 	 position: absolute;
 	 content: '';
 	 transition: all 0.5s;
 	 -webkit-transition: all 0.5s;
 }
- #threeDee {
+ .threeDee {
 	 display: inline-block;
 	 padding: 20px 40px;
    border: 5px var(--Black) solid;
@@ -81,7 +81,7 @@
 	 -webkit-transition: all 0.5s;
 	 background-color: var(--White);
 }
- #threeDee::before {
+ .threeDee::before {
 	 bottom: -20px;
 	 height: 15px;
 	 width: 104%;
@@ -90,7 +90,7 @@
 	 -webkit-transform: skewX(45deg);
 	 background-color: var(--Black);
 }
- #threeDee::after {
+ .threeDee::after {
 	 right: -20px;
 	 height: 111%;
 	 width: 15px;
@@ -99,16 +99,16 @@
 	 -webkit-transform: skewY(45deg);
 	 background-color: var(--Black);
 }
- #threeDee:active {
+ .threeDee:active {
 	 margin-left: 10px;
 	 margin-top: 10px;
 }
- #threeDee:active::before {
+ .threeDee:active::before {
 	 bottom: -5px;
 	 height: 5px;
 	 left: 3px;
 }
- #threeDee:active::after {
+ .threeDee:active::after {
 	 right: -5px;
 	 width: 5px;
 	 bottom: -3px;
@@ -135,9 +135,10 @@
 body {
   margin: 0;
   font-family: proxima-nova, sans-serif;
+  background-color: var(--OffWhite);
 }
 
-#threeDee span{
+.threeDee span{
   font-family: proxima-nova, sans-serif;
   font-size: xx-large;
   font-weight: 600;
@@ -147,6 +148,7 @@ body {
 }
 h1 {
   text-align: center;
+  font-family: proxima-nova, sans-serif;
 }
 
 table {
@@ -168,14 +170,6 @@ th {
   color: #fffeff;
 }
 
-#game {
-  height: 500px;
-  display: flex;
-}
-canvas {
-  width: 100%;
-  height: 100%;
-}
 
 .navContainer {
   display: flex;
@@ -185,7 +179,7 @@ canvas {
   align-items: center;
   background-color: var(--OffWhite);
 }
-
+  
 .navbar {
   display: flex;
   width: 100%;
@@ -210,9 +204,9 @@ canvas {
   margin-bottom: 0;
   padding: 0;
 }
-
+  
 .navbar ul li {
-  list-style: none;
+    list-style: none;
 }
 
 .navbar ul li a {
@@ -264,7 +258,7 @@ main {
 
 /* FOR TABLETS: Ipad, galaxy tab etc */
 @media (max-width: 1040px) {
-  #threeDee{
+  .threeDee{
     width: 100%;
   }
   .title-graphic-wrapper{
@@ -303,6 +297,7 @@ main {
   }
 }
 
+ 
 /* FOR MOBILE DEVICES: Android, iPhone, etc */
 @media (max-width: 810px) {
   .menuBtn {
