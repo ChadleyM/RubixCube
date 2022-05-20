@@ -1,7 +1,7 @@
 var navItems = [
     {item: 'Play', href: '/play-game/play-game.html'},
     {item: 'Learn', href: '/how-to-play/how-to-play.html'},
-    {item: 'Time', href: '/algorithms/algorithms.html'},
+    {item: 'Time', href: '/time/time.html'},
     {item: 'Score', href: '/leaderboard/leaderboard.html'},
     {item: 'About', href: '/about/about.html'},
 ]
