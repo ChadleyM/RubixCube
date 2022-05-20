@@ -23,8 +23,8 @@ router.get('/leaderboard/leaderboard.html', function(req, res, next) {
   res.render('leaderboard', { title: 'Leaderboard' });
 });
 
-router.get('algorithms/algorithms.html', function(req, res, next) {
-  res.render('algorithms', { title: 'Algorithms' });
+router.get('time/time.html', function(req, res, next) {
+  res.render('time', { title: 'Time' });
 });
 
 module.exports = router;
