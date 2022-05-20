@@ -3,90 +3,55 @@
 <html lang="en">
   <head>
     <title>Play Game</title>
-    <link rel="icon" href="../assets/Logo-small.png">
+    <link rel="icon" href="../assets/Logo-small.png" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/play-game.css" />
+    <script
+      src="https://kit.fontawesome.com/b7ecd662a4.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="../js/Navbar.js" async></script>
     <!--Put local css stylesheet here if necessary-->
-    <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <!--content-->
-    <header class="navContainer" id="navLocation">
-    </header>
-    <main class="center">
-        <container>
-          <h1>Rubix Cube!</h1>
-          <!--3D canvas-->
-                <!--3D canvas-->
-        <div class="game-container">
+    <header class="navContainer" id="navLocation"></header>
 
-          <div class="moves">
-
-            <div class="movesHeader">
-              <button type="button" class="collapsible", id="movesCollapsable">
-                <img id="drop-down-icon-moves" src="assets/down-arrow.png" height="12px" width="12px">
-              </button>
-              <h4 class="headerText">Moves</h4>
-            </div>
-            
-            <div class="movesContent">
-              <ul class="moveList">
-                <li class="move">my</li>
-                <li class="move">name</li>
-                <li class="move">is</li>
-                <li class="move">chicky</li>
-                <li class="move"></li>
-                <li class="move"></li>
-              </ul>
-            </div>
-            <!-- <div class="content">
-              <p>Lorem ipsum...</p>
-            </div>
-             -->
-          </div>
-          
-          <div id="game"></div>
-          
-          <div class="cubeControls">
-            <button></button>
-          </div>
-        
-        </div>
-
-        <menu id="btn-group-cube-options">
-          <button>Shuffle</button>
-          <button>Solve</button>
-        </menu>
-        <!--Controls-->
-        <!-- <div class ="cube-controls" id = "controlsPopup">
-          <title>Controls</title>
-          <br/>
-          <section >
-            <button onclick="hideControls()" class="close-controls">❌</button>
-            <br>
-            <button class = "btn-cube-control">U</button>
-            <button class = "btn-cube-control">L</button>
-            <button class = "btn-cube-control">F</button>
-            <br/>
-            <button class = "btn-cube-control">D</button>
-            <button class = "btn-cube-control">R</button>
-            <button class = "btn-cube-control">B</button>
-            <br/>
-            <button class = "btn-cube-control">X</button>
-            <button class = "btn-cube-control">Y</button>
-            <button class = "btn-cube-control">Z</button>
-            <br/>
-            <button class ='btn-inverse'>Inverse</button>
+    <main class="grid-wrapper">
+      <section class="moves">
+        <button class="box-header">
+          <i class="fa-solid fa-angle-down fa-xl"></i>
+          <h1>moves</h1>
+        </button>
+        <section class="box">
+            <p></p>
         </section>
-        </div>
-           -->
-        </container>
+      </section>
+      <section id="game" class="game-container"></section>
+      <section class="controls">
+        <button class="box-header">
+          <i class="fa-solid fa-angle-down fa-xl"></i>
+          <h1>controls</h1>
+        </button>
+        <section class="box">
+            <p></p>
+        </section>
+      </section>
+      <section class="game-buttons">
+        <button class="threeDee">
+          <span>SOLVE</span>
+        </button>
+        <button class="threeDee">
+          <span>SHUFFLE</span>
+        </button>
+      </section>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
     <script src="../lib/OrbitControls.js"></script>
     <script src="./dist/bundle.js" type="text/javascript"></script>
+    <script src="./js/UI.js" type="text/javascript"></script>
   </body>
 </html>

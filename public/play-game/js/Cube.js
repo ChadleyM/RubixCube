@@ -32,7 +32,7 @@ class Cube {
 
     // set geometry of this cube
     const geometry = new THREE.BoxGeometry(cubeSize, cubeSize, cubeSize);
-    const material = new THREE.MeshBasicMaterial( {color: 0x444444 } );
+    const material = new THREE.MeshBasicMaterial( {color: 0x101010 } );
     
     for (let i = 0; i < dimensions; i++) { // sides
         
@@ -65,7 +65,7 @@ class Cube {
   }
 
 
-  colorCube(colors = [0x00ff00, 0xffff00, 0x0000ff, 0xffffff, 0xFFA500, 0xff0000]) {
+  colorCube(colors = [0x009A66, 0xFEEF05, 0x016BB5, 0xfffeff, 0xFFA500, 0xD01242]) {
 
       function colorFace(object, game, cubeFaces, face, color) {
 
@@ -77,8 +77,8 @@ class Cube {
            */
 
           // define face parameters
-          let innerCubeScale = 0.89;
-          let offset = 1 + (1 - innerCubeScale) + 0.01;
+          let innerCubeScale = 0.9;
+          let offset = 0.95 + (1 - innerCubeScale) + 0.01;
           let geometry = new THREE.BoxGeometry(innerCubeScale, innerCubeScale, innerCubeScale);
           let material = new THREE.MeshBasicMaterial({color: color});
 

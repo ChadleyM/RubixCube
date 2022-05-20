@@ -18,7 +18,7 @@ class Game {
     this.controls = new THREE.OrbitControls(this.world.camera,this.world.renderer.domElement);
     this.controls.noZoom = true;
     this.world.update();
-    console.log('hello')
+
   }
 
   init() {

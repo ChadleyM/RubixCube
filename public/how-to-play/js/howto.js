@@ -15,7 +15,6 @@ function previous(tutorialStep) {
             window.currentStep = tutorialStep;
         } else {
             window.currentStep--;
-            console.log("normal nav");
         }
         const newStep = document.getElementById("step" + window.currentStep);
         oldStep.style.display = "none";
